@@ -59,5 +59,70 @@ class ConsultasParametros
      */
     private $idConsulta;
 
+    public function getIdParametro(): ?int
+    {
+        return $this->idParametro;
+    }
+
+    public function getNombre(): ?string
+    {
+        return $this->nombre;
+    }
+
+    public function setNombre(string $nombre): self
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    public function getVariable(): ?string
+    {
+        return $this->variable;
+    }
+
+    public function setVariable(string $variable): self
+    {
+        $this->variable = $variable;
+
+        return $this;
+    }
+
+    public function getTipoentrada(): ?string
+    {
+        return $this->tipoentrada;
+    }
+
+    public function setTipoentrada(string $tipoentrada): self
+    {
+        $this->tipoentrada = $tipoentrada;
+
+        return $this;
+    }
+
+    public function getOrden(): ?bool
+    {
+        return $this->orden;
+    }
+
+    public function setOrden(bool $orden): self
+    {
+        $this->orden = $orden;
+
+        return $this;
+    }
+
+    public function getIdConsulta(): ?Consultas
+    {
+        return $this->idConsulta;
+    }
+
+    public function setIdConsulta(?Consultas $idConsulta): self
+    {
+        $this->idConsulta = $idConsulta;
+
+        return $this;
+    }
+
 
 }

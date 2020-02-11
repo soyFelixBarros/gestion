@@ -72,5 +72,82 @@ class ArticulosPrecios
      */
     private $idPersona;
 
+    public function getIdPrecio(): ?int
+    {
+        return $this->idPrecio;
+    }
+
+    public function getFecha(): ?\DateTimeInterface
+    {
+        return $this->fecha;
+    }
+
+    public function setFecha(?\DateTimeInterface $fecha): self
+    {
+        $this->fecha = $fecha;
+
+        return $this;
+    }
+
+    public function getCosto(): ?string
+    {
+        return $this->costo;
+    }
+
+    public function setCosto(string $costo): self
+    {
+        $this->costo = $costo;
+
+        return $this;
+    }
+
+    public function getPvp(): ?string
+    {
+        return $this->pvp;
+    }
+
+    public function setPvp(string $pvp): self
+    {
+        $this->pvp = $pvp;
+
+        return $this;
+    }
+
+    public function getIdArticulo(): ?Articulos
+    {
+        return $this->idArticulo;
+    }
+
+    public function setIdArticulo(?Articulos $idArticulo): self
+    {
+        $this->idArticulo = $idArticulo;
+
+        return $this;
+    }
+
+    public function getIdMargen(): ?Margenes
+    {
+        return $this->idMargen;
+    }
+
+    public function setIdMargen(?Margenes $idMargen): self
+    {
+        $this->idMargen = $idMargen;
+
+        return $this;
+    }
+
+    public function getIdPersona(): ?Personas
+    {
+        return $this->idPersona;
+    }
+
+    public function setIdPersona(?Personas $idPersona): self
+    {
+        $this->idPersona = $idPersona;
+
+        return $this;
+    }
+
 
 }

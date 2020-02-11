@@ -316,5 +316,490 @@ class Personas
      */
     private $idVendedor;
 
+    public function getIdPersona(): ?int
+    {
+        return $this->idPersona;
+    }
+
+    public function getNombreVisible(): ?string
+    {
+        return $this->nombreVisible;
+    }
+
+    public function setNombreVisible(string $nombreVisible): self
+    {
+        $this->nombreVisible = $nombreVisible;
+
+        return $this;
+    }
+
+    public function getObs(): ?string
+    {
+        return $this->obs;
+    }
+
+    public function setObs(?string $obs): self
+    {
+        $this->obs = $obs;
+
+        return $this;
+    }
+
+    public function getEstado(): ?int
+    {
+        return $this->estado;
+    }
+
+    public function setEstado(int $estado): self
+    {
+        $this->estado = $estado;
+
+        return $this;
+    }
+
+    public function getFecha(): ?\DateTimeInterface
+    {
+        return $this->fecha;
+    }
+
+    public function setFecha(?\DateTimeInterface $fecha): self
+    {
+        $this->fecha = $fecha;
+
+        return $this;
+    }
+
+    public function getTipo(): ?int
+    {
+        return $this->tipo;
+    }
+
+    public function setTipo(int $tipo): self
+    {
+        $this->tipo = $tipo;
+
+        return $this;
+    }
+
+    public function getIdSubgrupo(): ?int
+    {
+        return $this->idSubgrupo;
+    }
+
+    public function setIdSubgrupo(?int $idSubgrupo): self
+    {
+        $this->idSubgrupo = $idSubgrupo;
+
+        return $this;
+    }
+
+    public function getNombre(): ?string
+    {
+        return $this->nombre;
+    }
+
+    public function setNombre(?string $nombre): self
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    public function getApellido(): ?string
+    {
+        return $this->apellido;
+    }
+
+    public function setApellido(?string $apellido): self
+    {
+        $this->apellido = $apellido;
+
+        return $this;
+    }
+
+    public function getNombreFantasia(): ?string
+    {
+        return $this->nombreFantasia;
+    }
+
+    public function setNombreFantasia(?string $nombreFantasia): self
+    {
+        $this->nombreFantasia = $nombreFantasia;
+
+        return $this;
+    }
+
+    public function getRazonSocial(): ?string
+    {
+        return $this->razonSocial;
+    }
+
+    public function setRazonSocial(?string $razonSocial): self
+    {
+        $this->razonSocial = $razonSocial;
+
+        return $this;
+    }
+
+    public function getNombreusuario(): ?string
+    {
+        return $this->nombreusuario;
+    }
+
+    public function setNombreusuario(?string $nombreusuario): self
+    {
+        $this->nombreusuario = $nombreusuario;
+
+        return $this;
+    }
+
+    public function getContrasena(): ?string
+    {
+        return $this->contrasena;
+    }
+
+    public function setContrasena(?string $contrasena): self
+    {
+        $this->contrasena = $contrasena;
+
+        return $this;
+    }
+
+    public function getContrasenaSal(): ?string
+    {
+        return $this->contrasenaSal;
+    }
+
+    public function setContrasenaSal(?string $contrasenaSal): self
+    {
+        $this->contrasenaSal = $contrasenaSal;
+
+        return $this;
+    }
+
+    public function getContrasenaFecha(): ?\DateTimeInterface
+    {
+        return $this->contrasenaFecha;
+    }
+
+    public function setContrasenaFecha(?\DateTimeInterface $contrasenaFecha): self
+    {
+        $this->contrasenaFecha = $contrasenaFecha;
+
+        return $this;
+    }
+
+    public function getGenero(): ?int
+    {
+        return $this->genero;
+    }
+
+    public function setGenero(?int $genero): self
+    {
+        $this->genero = $genero;
+
+        return $this;
+    }
+
+    public function getNumDoc(): ?string
+    {
+        return $this->numDoc;
+    }
+
+    public function setNumDoc(?string $numDoc): self
+    {
+        $this->numDoc = $numDoc;
+
+        return $this;
+    }
+
+    public function getIdTipoCuit(): ?int
+    {
+        return $this->idTipoCuit;
+    }
+
+    public function setIdTipoCuit(?int $idTipoCuit): self
+    {
+        $this->idTipoCuit = $idTipoCuit;
+
+        return $this;
+    }
+
+    public function getCuit(): ?string
+    {
+        return $this->cuit;
+    }
+
+    public function setCuit(?string $cuit): self
+    {
+        $this->cuit = $cuit;
+
+        return $this;
+    }
+
+    public function getDomicilio(): ?string
+    {
+        return $this->domicilio;
+    }
+
+    public function setDomicilio(?string $domicilio): self
+    {
+        $this->domicilio = $domicilio;
+
+        return $this;
+    }
+
+    public function getDomiciliotrabajo(): ?string
+    {
+        return $this->domiciliotrabajo;
+    }
+
+    public function setDomiciliotrabajo(?string $domiciliotrabajo): self
+    {
+        $this->domiciliotrabajo = $domiciliotrabajo;
+
+        return $this;
+    }
+
+    public function getTelefono(): ?string
+    {
+        return $this->telefono;
+    }
+
+    public function setTelefono(?string $telefono): self
+    {
+        $this->telefono = $telefono;
+
+        return $this;
+    }
+
+    public function getEmail(): ?string
+    {
+        return $this->email;
+    }
+
+    public function setEmail(?string $email): self
+    {
+        $this->email = $email;
+
+        return $this;
+    }
+
+    public function getUrl(): ?string
+    {
+        return $this->url;
+    }
+
+    public function setUrl(?string $url): self
+    {
+        $this->url = $url;
+
+        return $this;
+    }
+
+    public function getTipoFac(): ?string
+    {
+        return $this->tipoFac;
+    }
+
+    public function setTipoFac(?string $tipoFac): self
+    {
+        $this->tipoFac = $tipoFac;
+
+        return $this;
+    }
+
+    public function getFechanac(): ?\DateTimeInterface
+    {
+        return $this->fechanac;
+    }
+
+    public function setFechanac(?\DateTimeInterface $fechanac): self
+    {
+        $this->fechanac = $fechanac;
+
+        return $this;
+    }
+
+    public function getFechaalta(): ?\DateTimeInterface
+    {
+        return $this->fechaalta;
+    }
+
+    public function setFechaalta(?\DateTimeInterface $fechaalta): self
+    {
+        $this->fechaalta = $fechaalta;
+
+        return $this;
+    }
+
+    public function getFechabaja(): ?\DateTimeInterface
+    {
+        return $this->fechabaja;
+    }
+
+    public function setFechabaja(?\DateTimeInterface $fechabaja): self
+    {
+        $this->fechabaja = $fechabaja;
+
+        return $this;
+    }
+
+    public function getLimitecredito(): ?string
+    {
+        return $this->limitecredito;
+    }
+
+    public function setLimitecredito(string $limitecredito): self
+    {
+        $this->limitecredito = $limitecredito;
+
+        return $this;
+    }
+
+    public function getLimitecreditofecha(): ?\DateTimeInterface
+    {
+        return $this->limitecreditofecha;
+    }
+
+    public function setLimitecreditofecha(?\DateTimeInterface $limitecreditofecha): self
+    {
+        $this->limitecreditofecha = $limitecreditofecha;
+
+        return $this;
+    }
+
+    public function getSaldoCtacte(): ?string
+    {
+        return $this->saldoCtacte;
+    }
+
+    public function setSaldoCtacte(string $saldoCtacte): self
+    {
+        $this->saldoCtacte = $saldoCtacte;
+
+        return $this;
+    }
+
+    public function getEstadocredito(): ?int
+    {
+        return $this->estadocredito;
+    }
+
+    public function setEstadocredito(int $estadocredito): self
+    {
+        $this->estadocredito = $estadocredito;
+
+        return $this;
+    }
+
+    public function getTipocuenta(): ?int
+    {
+        return $this->tipocuenta;
+    }
+
+    public function setTipocuenta(int $tipocuenta): self
+    {
+        $this->tipocuenta = $tipocuenta;
+
+        return $this;
+    }
+
+    public function getNumerocuenta(): ?string
+    {
+        return $this->numerocuenta;
+    }
+
+    public function setNumerocuenta(?string $numerocuenta): self
+    {
+        $this->numerocuenta = $numerocuenta;
+
+        return $this;
+    }
+
+    public function getCbu(): ?string
+    {
+        return $this->cbu;
+    }
+
+    public function setCbu(?string $cbu): self
+    {
+        $this->cbu = $cbu;
+
+        return $this;
+    }
+
+    public function getExtra1(): ?string
+    {
+        return $this->extra1;
+    }
+
+    public function setExtra1(?string $extra1): self
+    {
+        $this->extra1 = $extra1;
+
+        return $this;
+    }
+
+    public function getIdCiudad(): ?Ciudades
+    {
+        return $this->idCiudad;
+    }
+
+    public function setIdCiudad(?Ciudades $idCiudad): self
+    {
+        $this->idCiudad = $idCiudad;
+
+        return $this;
+    }
+
+    public function getIdGrupo(): ?PersonasGrupos
+    {
+        return $this->idGrupo;
+    }
+
+    public function setIdGrupo(?PersonasGrupos $idGrupo): self
+    {
+        $this->idGrupo = $idGrupo;
+
+        return $this;
+    }
+
+    public function getIdSituacion(): ?Situaciones
+    {
+        return $this->idSituacion;
+    }
+
+    public function setIdSituacion(?Situaciones $idSituacion): self
+    {
+        $this->idSituacion = $idSituacion;
+
+        return $this;
+    }
+
+    public function getIdTipoDoc(): ?TipoDoc
+    {
+        return $this->idTipoDoc;
+    }
+
+    public function setIdTipoDoc(?TipoDoc $idTipoDoc): self
+    {
+        $this->idTipoDoc = $idTipoDoc;
+
+        return $this;
+    }
+
+    public function getIdVendedor(): ?self
+    {
+        return $this->idVendedor;
+    }
+
+    public function setIdVendedor(?self $idVendedor): self
+    {
+        $this->idVendedor = $idVendedor;
+
+        return $this;
+    }
+
 
 }

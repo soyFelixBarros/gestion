@@ -103,5 +103,130 @@ class Sucursales
      */
     private $situacionorigen;
 
+    public function getIdSucursal(): ?int
+    {
+        return $this->idSucursal;
+    }
+
+    public function getNombre(): ?string
+    {
+        return $this->nombre;
+    }
+
+    public function setNombre(string $nombre): self
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    public function getObs(): ?string
+    {
+        return $this->obs;
+    }
+
+    public function setObs(?string $obs): self
+    {
+        $this->obs = $obs;
+
+        return $this;
+    }
+
+    public function getEstado(): ?int
+    {
+        return $this->estado;
+    }
+
+    public function setEstado(int $estado): self
+    {
+        $this->estado = $estado;
+
+        return $this;
+    }
+
+    public function getFecha(): ?\DateTimeInterface
+    {
+        return $this->fecha;
+    }
+
+    public function setFecha(?\DateTimeInterface $fecha): self
+    {
+        $this->fecha = $fecha;
+
+        return $this;
+    }
+
+    public function getDireccion(): ?string
+    {
+        return $this->direccion;
+    }
+
+    public function setDireccion(string $direccion): self
+    {
+        $this->direccion = $direccion;
+
+        return $this;
+    }
+
+    public function getTelefono(): ?string
+    {
+        return $this->telefono;
+    }
+
+    public function setTelefono(string $telefono): self
+    {
+        $this->telefono = $telefono;
+
+        return $this;
+    }
+
+    public function getIdCajaCheques(): ?Cajas
+    {
+        return $this->idCajaCheques;
+    }
+
+    public function setIdCajaCheques(?Cajas $idCajaCheques): self
+    {
+        $this->idCajaCheques = $idCajaCheques;
+
+        return $this;
+    }
+
+    public function getIdCajaDiaria(): ?Cajas
+    {
+        return $this->idCajaDiaria;
+    }
+
+    public function setIdCajaDiaria(?Cajas $idCajaDiaria): self
+    {
+        $this->idCajaDiaria = $idCajaDiaria;
+
+        return $this;
+    }
+
+    public function getIdCiudad(): ?Ciudades
+    {
+        return $this->idCiudad;
+    }
+
+    public function setIdCiudad(?Ciudades $idCiudad): self
+    {
+        $this->idCiudad = $idCiudad;
+
+        return $this;
+    }
+
+    public function getSituacionorigen(): ?Situaciones
+    {
+        return $this->situacionorigen;
+    }
+
+    public function setSituacionorigen(?Situaciones $situacionorigen): self
+    {
+        $this->situacionorigen = $situacionorigen;
+
+        return $this;
+    }
+
 
 }

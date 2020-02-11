@@ -94,5 +94,130 @@ class Ciudades
      */
     private $idPais;
 
+    public function getIdCiudad(): ?int
+    {
+        return $this->idCiudad;
+    }
+
+    public function getNombre(): ?string
+    {
+        return $this->nombre;
+    }
+
+    public function setNombre(string $nombre): self
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    public function getCp(): ?string
+    {
+        return $this->cp;
+    }
+
+    public function setCp(string $cp): self
+    {
+        $this->cp = $cp;
+
+        return $this;
+    }
+
+    public function getParent(): ?int
+    {
+        return $this->parent;
+    }
+
+    public function setParent(?int $parent): self
+    {
+        $this->parent = $parent;
+
+        return $this;
+    }
+
+    public function getIdProvincia(): ?int
+    {
+        return $this->idProvincia;
+    }
+
+    public function setIdProvincia(?int $idProvincia): self
+    {
+        $this->idProvincia = $idProvincia;
+
+        return $this;
+    }
+
+    public function getNivel(): ?bool
+    {
+        return $this->nivel;
+    }
+
+    public function setNivel(bool $nivel): self
+    {
+        $this->nivel = $nivel;
+
+        return $this;
+    }
+
+    public function getIva(): ?bool
+    {
+        return $this->iva;
+    }
+
+    public function setIva(bool $iva): self
+    {
+        $this->iva = $iva;
+
+        return $this;
+    }
+
+    public function getObs(): ?string
+    {
+        return $this->obs;
+    }
+
+    public function setObs(?string $obs): self
+    {
+        $this->obs = $obs;
+
+        return $this;
+    }
+
+    public function getEstado(): ?int
+    {
+        return $this->estado;
+    }
+
+    public function setEstado(int $estado): self
+    {
+        $this->estado = $estado;
+
+        return $this;
+    }
+
+    public function getFecha(): ?\DateTimeInterface
+    {
+        return $this->fecha;
+    }
+
+    public function setFecha(?\DateTimeInterface $fecha): self
+    {
+        $this->fecha = $fecha;
+
+        return $this;
+    }
+
+    public function getIdPais(): ?Paises
+    {
+        return $this->idPais;
+    }
+
+    public function setIdPais(?Paises $idPais): self
+    {
+        $this->idPais = $idPais;
+
+        return $this;
+    }
+
 
 }

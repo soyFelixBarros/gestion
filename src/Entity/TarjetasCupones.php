@@ -168,5 +168,226 @@ class TarjetasCupones
      */
     private $idVendedor;
 
+    public function getIdCupon(): ?int
+    {
+        return $this->idCupon;
+    }
+
+    public function getNombre(): ?string
+    {
+        return $this->nombre;
+    }
+
+    public function setNombre(string $nombre): self
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    public function getObs(): ?string
+    {
+        return $this->obs;
+    }
+
+    public function setObs(?string $obs): self
+    {
+        $this->obs = $obs;
+
+        return $this;
+    }
+
+    public function getEstado(): ?int
+    {
+        return $this->estado;
+    }
+
+    public function setEstado(int $estado): self
+    {
+        $this->estado = $estado;
+
+        return $this;
+    }
+
+    public function getFecha(): ?\DateTimeInterface
+    {
+        return $this->fecha;
+    }
+
+    public function setFecha(?\DateTimeInterface $fecha): self
+    {
+        $this->fecha = $fecha;
+
+        return $this;
+    }
+
+    public function getNumero(): ?string
+    {
+        return $this->numero;
+    }
+
+    public function setNumero(string $numero): self
+    {
+        $this->numero = $numero;
+
+        return $this;
+    }
+
+    public function getConcepto(): ?string
+    {
+        return $this->concepto;
+    }
+
+    public function setConcepto(?string $concepto): self
+    {
+        $this->concepto = $concepto;
+
+        return $this;
+    }
+
+    public function getAutorizacion(): ?string
+    {
+        return $this->autorizacion;
+    }
+
+    public function setAutorizacion(?string $autorizacion): self
+    {
+        $this->autorizacion = $autorizacion;
+
+        return $this;
+    }
+
+    public function getFechaPres(): ?\DateTimeInterface
+    {
+        return $this->fechaPres;
+    }
+
+    public function setFechaPres(?\DateTimeInterface $fechaPres): self
+    {
+        $this->fechaPres = $fechaPres;
+
+        return $this;
+    }
+
+    public function getFechaAcred(): ?\DateTimeInterface
+    {
+        return $this->fechaAcred;
+    }
+
+    public function setFechaAcred(?\DateTimeInterface $fechaAcred): self
+    {
+        $this->fechaAcred = $fechaAcred;
+
+        return $this;
+    }
+
+    public function getImporte(): ?string
+    {
+        return $this->importe;
+    }
+
+    public function setImporte(string $importe): self
+    {
+        $this->importe = $importe;
+
+        return $this;
+    }
+
+    public function getImportePagado(): ?string
+    {
+        return $this->importePagado;
+    }
+
+    public function setImportePagado(string $importePagado): self
+    {
+        $this->importePagado = $importePagado;
+
+        return $this;
+    }
+
+    public function getIdCliente(): ?Personas
+    {
+        return $this->idCliente;
+    }
+
+    public function setIdCliente(?Personas $idCliente): self
+    {
+        $this->idCliente = $idCliente;
+
+        return $this;
+    }
+
+    public function getIdComprob(): ?Comprob
+    {
+        return $this->idComprob;
+    }
+
+    public function setIdComprob(?Comprob $idComprob): self
+    {
+        $this->idComprob = $idComprob;
+
+        return $this;
+    }
+
+    public function getIdConcepto(): ?Conceptos
+    {
+        return $this->idConcepto;
+    }
+
+    public function setIdConcepto(?Conceptos $idConcepto): self
+    {
+        $this->idConcepto = $idConcepto;
+
+        return $this;
+    }
+
+    public function getIdTarjeta(): ?Formaspago
+    {
+        return $this->idTarjeta;
+    }
+
+    public function setIdTarjeta(?Formaspago $idTarjeta): self
+    {
+        $this->idTarjeta = $idTarjeta;
+
+        return $this;
+    }
+
+    public function getIdPlan(): ?TarjetasPlanes
+    {
+        return $this->idPlan;
+    }
+
+    public function setIdPlan(?TarjetasPlanes $idPlan): self
+    {
+        $this->idPlan = $idPlan;
+
+        return $this;
+    }
+
+    public function getIdRecibo(): ?Recibos
+    {
+        return $this->idRecibo;
+    }
+
+    public function setIdRecibo(?Recibos $idRecibo): self
+    {
+        $this->idRecibo = $idRecibo;
+
+        return $this;
+    }
+
+    public function getIdVendedor(): ?Personas
+    {
+        return $this->idVendedor;
+    }
+
+    public function setIdVendedor(?Personas $idVendedor): self
+    {
+        $this->idVendedor = $idVendedor;
+
+        return $this;
+    }
+
 
 }

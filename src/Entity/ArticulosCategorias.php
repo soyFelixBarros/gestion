@@ -125,5 +125,178 @@ class ArticulosCategorias
      */
     private $idRubro;
 
+    public function getIdCategoria(): ?int
+    {
+        return $this->idCategoria;
+    }
+
+    public function getNombre(): ?string
+    {
+        return $this->nombre;
+    }
+
+    public function setNombre(string $nombre): self
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    public function getNombresing(): ?string
+    {
+        return $this->nombresing;
+    }
+
+    public function setNombresing(?string $nombresing): self
+    {
+        $this->nombresing = $nombresing;
+
+        return $this;
+    }
+
+    public function getStockMinimo(): ?string
+    {
+        return $this->stockMinimo;
+    }
+
+    public function setStockMinimo(string $stockMinimo): self
+    {
+        $this->stockMinimo = $stockMinimo;
+
+        return $this;
+    }
+
+    public function getImagen()
+    {
+        return $this->imagen;
+    }
+
+    public function setImagen($imagen): self
+    {
+        $this->imagen = $imagen;
+
+        return $this;
+    }
+
+    public function getObs(): ?string
+    {
+        return $this->obs;
+    }
+
+    public function setObs(?string $obs): self
+    {
+        $this->obs = $obs;
+
+        return $this;
+    }
+
+    public function getEstado(): ?int
+    {
+        return $this->estado;
+    }
+
+    public function setEstado(int $estado): self
+    {
+        $this->estado = $estado;
+
+        return $this;
+    }
+
+    public function getFecha(): ?\DateTimeInterface
+    {
+        return $this->fecha;
+    }
+
+    public function setFecha(?\DateTimeInterface $fecha): self
+    {
+        $this->fecha = $fecha;
+
+        return $this;
+    }
+
+    public function getWeb(): ?bool
+    {
+        return $this->web;
+    }
+
+    public function setWeb(?bool $web): self
+    {
+        $this->web = $web;
+
+        return $this;
+    }
+
+    public function getRequierens(): ?bool
+    {
+        return $this->requierens;
+    }
+
+    public function setRequierens(bool $requierens): self
+    {
+        $this->requierens = $requierens;
+
+        return $this;
+    }
+
+    public function getCacheStockActual(): ?string
+    {
+        return $this->cacheStockActual;
+    }
+
+    public function setCacheStockActual(?string $cacheStockActual): self
+    {
+        $this->cacheStockActual = $cacheStockActual;
+
+        return $this;
+    }
+
+    public function getCacheCosto(): ?string
+    {
+        return $this->cacheCosto;
+    }
+
+    public function setCacheCosto(?string $cacheCosto): self
+    {
+        $this->cacheCosto = $cacheCosto;
+
+        return $this;
+    }
+
+    public function getGarantia(): ?bool
+    {
+        return $this->garantia;
+    }
+
+    public function setGarantia(bool $garantia): self
+    {
+        $this->garantia = $garantia;
+
+        return $this;
+    }
+
+    public function getIdAlicuota(): ?Alicuotas
+    {
+        return $this->idAlicuota;
+    }
+
+    public function setIdAlicuota(?Alicuotas $idAlicuota): self
+    {
+        $this->idAlicuota = $idAlicuota;
+
+        return $this;
+    }
+
+    public function getIdRubro(): ?ArticulosRubros
+    {
+        return $this->idRubro;
+    }
+
+    public function setIdRubro(?ArticulosRubros $idRubro): self
+    {
+        $this->idRubro = $idRubro;
+
+        return $this;
+    }
+
 
 }

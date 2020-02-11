@@ -55,5 +55,58 @@ class ArticulosSeries
      */
     private $idSituacion;
 
+    public function getIdSerie(): ?int
+    {
+        return $this->idSerie;
+    }
+
+    public function getSerie(): ?string
+    {
+        return $this->serie;
+    }
+
+    public function setSerie(string $serie): self
+    {
+        $this->serie = $serie;
+
+        return $this;
+    }
+
+    public function getCantidad(): ?string
+    {
+        return $this->cantidad;
+    }
+
+    public function setCantidad(string $cantidad): self
+    {
+        $this->cantidad = $cantidad;
+
+        return $this;
+    }
+
+    public function getIdArticulo(): ?Articulos
+    {
+        return $this->idArticulo;
+    }
+
+    public function setIdArticulo(?Articulos $idArticulo): self
+    {
+        $this->idArticulo = $idArticulo;
+
+        return $this;
+    }
+
+    public function getIdSituacion(): ?ArticulosSituaciones
+    {
+        return $this->idSituacion;
+    }
+
+    public function setIdSituacion(?ArticulosSituaciones $idSituacion): self
+    {
+        $this->idSituacion = $idSituacion;
+
+        return $this;
+    }
+
 
 }

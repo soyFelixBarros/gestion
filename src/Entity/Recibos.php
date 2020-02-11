@@ -2,6 +2,8 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -152,6 +154,205 @@ class Recibos
     public function __construct()
     {
         $this->idComprob = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    public function getIdRecibo(): ?int
+    {
+        return $this->idRecibo;
+    }
+
+    public function getObs(): ?string
+    {
+        return $this->obs;
+    }
+
+    public function setObs(?string $obs): self
+    {
+        $this->obs = $obs;
+
+        return $this;
+    }
+
+    public function getEstado(): ?int
+    {
+        return $this->estado;
+    }
+
+    public function setEstado(int $estado): self
+    {
+        $this->estado = $estado;
+
+        return $this;
+    }
+
+    public function getFecha(): ?\DateTimeInterface
+    {
+        return $this->fecha;
+    }
+
+    public function setFecha(?\DateTimeInterface $fecha): self
+    {
+        $this->fecha = $fecha;
+
+        return $this;
+    }
+
+    public function getTipoFac(): ?string
+    {
+        return $this->tipoFac;
+    }
+
+    public function setTipoFac(string $tipoFac): self
+    {
+        $this->tipoFac = $tipoFac;
+
+        return $this;
+    }
+
+    public function getConcepto(): ?string
+    {
+        return $this->concepto;
+    }
+
+    public function setConcepto(?string $concepto): self
+    {
+        $this->concepto = $concepto;
+
+        return $this;
+    }
+
+    public function getPv(): ?bool
+    {
+        return $this->pv;
+    }
+
+    public function setPv(bool $pv): self
+    {
+        $this->pv = $pv;
+
+        return $this;
+    }
+
+    public function getNumero(): ?int
+    {
+        return $this->numero;
+    }
+
+    public function setNumero(int $numero): self
+    {
+        $this->numero = $numero;
+
+        return $this;
+    }
+
+    public function getNombre(): ?string
+    {
+        return $this->nombre;
+    }
+
+    public function setNombre(string $nombre): self
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    public function getImpreso(): ?bool
+    {
+        return $this->impreso;
+    }
+
+    public function setImpreso(bool $impreso): self
+    {
+        $this->impreso = $impreso;
+
+        return $this;
+    }
+
+    public function getTotal(): ?string
+    {
+        return $this->total;
+    }
+
+    public function setTotal(string $total): self
+    {
+        $this->total = $total;
+
+        return $this;
+    }
+
+    public function getIdCliente(): ?Personas
+    {
+        return $this->idCliente;
+    }
+
+    public function setIdCliente(?Personas $idCliente): self
+    {
+        $this->idCliente = $idCliente;
+
+        return $this;
+    }
+
+    public function getIdConcepto(): ?Conceptos
+    {
+        return $this->idConcepto;
+    }
+
+    public function setIdConcepto(?Conceptos $idConcepto): self
+    {
+        $this->idConcepto = $idConcepto;
+
+        return $this;
+    }
+
+    public function getIdSucursal(): ?Sucursales
+    {
+        return $this->idSucursal;
+    }
+
+    public function setIdSucursal(?Sucursales $idSucursal): self
+    {
+        $this->idSucursal = $idSucursal;
+
+        return $this;
+    }
+
+    public function getIdVendedor(): ?Personas
+    {
+        return $this->idVendedor;
+    }
+
+    public function setIdVendedor(?Personas $idVendedor): self
+    {
+        $this->idVendedor = $idVendedor;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Comprob[]
+     */
+    public function getIdComprob(): Collection
+    {
+        return $this->idComprob;
+    }
+
+    public function addIdComprob(Comprob $idComprob): self
+    {
+        if (!$this->idComprob->contains($idComprob)) {
+            $this->idComprob[] = $idComprob;
+        }
+
+        return $this;
+    }
+
+    public function removeIdComprob(Comprob $idComprob): self
+    {
+        if ($this->idComprob->contains($idComprob)) {
+            $this->idComprob->removeElement($idComprob);
+        }
+
+        return $this;
     }
 
 }

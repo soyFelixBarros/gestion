@@ -70,5 +70,94 @@ class Conceptos
      */
     private $fecha;
 
+    public function getIdConcepto(): ?int
+    {
+        return $this->idConcepto;
+    }
+
+    public function getNombre(): ?string
+    {
+        return $this->nombre;
+    }
+
+    public function setNombre(string $nombre): self
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    public function getEs(): ?bool
+    {
+        return $this->es;
+    }
+
+    public function setEs(bool $es): self
+    {
+        $this->es = $es;
+
+        return $this;
+    }
+
+    public function getGrupo(): ?int
+    {
+        return $this->grupo;
+    }
+
+    public function setGrupo(?int $grupo): self
+    {
+        $this->grupo = $grupo;
+
+        return $this;
+    }
+
+    public function getFijo(): ?bool
+    {
+        return $this->fijo;
+    }
+
+    public function setFijo(bool $fijo): self
+    {
+        $this->fijo = $fijo;
+
+        return $this;
+    }
+
+    public function getObs(): ?string
+    {
+        return $this->obs;
+    }
+
+    public function setObs(?string $obs): self
+    {
+        $this->obs = $obs;
+
+        return $this;
+    }
+
+    public function getEstado(): ?int
+    {
+        return $this->estado;
+    }
+
+    public function setEstado(int $estado): self
+    {
+        $this->estado = $estado;
+
+        return $this;
+    }
+
+    public function getFecha(): ?\DateTimeInterface
+    {
+        return $this->fecha;
+    }
+
+    public function setFecha(?\DateTimeInterface $fecha): self
+    {
+        $this->fecha = $fecha;
+
+        return $this;
+    }
+
 
 }

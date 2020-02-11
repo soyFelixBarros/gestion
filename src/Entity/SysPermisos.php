@@ -49,5 +49,58 @@ class SysPermisos
      */
     private $ops;
 
+    public function getIdPermiso(): ?int
+    {
+        return $this->idPermiso;
+    }
+
+    public function getIdObjeto(): ?int
+    {
+        return $this->idObjeto;
+    }
+
+    public function setIdObjeto(int $idObjeto): self
+    {
+        $this->idObjeto = $idObjeto;
+
+        return $this;
+    }
+
+    public function getIdPersona(): ?int
+    {
+        return $this->idPersona;
+    }
+
+    public function setIdPersona(int $idPersona): self
+    {
+        $this->idPersona = $idPersona;
+
+        return $this;
+    }
+
+    public function getItems(): ?string
+    {
+        return $this->items;
+    }
+
+    public function setItems(?string $items): self
+    {
+        $this->items = $items;
+
+        return $this;
+    }
+
+    public function getOps(): ?int
+    {
+        return $this->ops;
+    }
+
+    public function setOps(int $ops): self
+    {
+        $this->ops = $ops;
+
+        return $this;
+    }
+
 
 }

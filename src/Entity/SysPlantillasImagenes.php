@@ -31,5 +31,29 @@ class SysPlantillasImagenes
      */
     private $idPlantilla;
 
+    public function getImagen()
+    {
+        return $this->imagen;
+    }
+
+    public function setImagen($imagen): self
+    {
+        $this->imagen = $imagen;
+
+        return $this;
+    }
+
+    public function getIdPlantilla(): ?SysPlantillas
+    {
+        return $this->idPlantilla;
+    }
+
+    public function setIdPlantilla(?SysPlantillas $idPlantilla): self
+    {
+        $this->idPlantilla = $idPlantilla;
+
+        return $this;
+    }
+
 
 }

@@ -132,5 +132,190 @@ class Formaspago
      */
     private $idConcepto;
 
+    public function getIdFormapago(): ?int
+    {
+        return $this->idFormapago;
+    }
+
+    public function getNombre(): ?string
+    {
+        return $this->nombre;
+    }
+
+    public function setNombre(string $nombre): self
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    public function getTipo(): ?bool
+    {
+        return $this->tipo;
+    }
+
+    public function setTipo(bool $tipo): self
+    {
+        $this->tipo = $tipo;
+
+        return $this;
+    }
+
+    public function getDescuento(): ?string
+    {
+        return $this->descuento;
+    }
+
+    public function setDescuento(string $descuento): self
+    {
+        $this->descuento = $descuento;
+
+        return $this;
+    }
+
+    public function getRetencion(): ?string
+    {
+        return $this->retencion;
+    }
+
+    public function setRetencion(string $retencion): self
+    {
+        $this->retencion = $retencion;
+
+        return $this;
+    }
+
+    public function getAutopres(): ?bool
+    {
+        return $this->autopres;
+    }
+
+    public function setAutopres(bool $autopres): self
+    {
+        $this->autopres = $autopres;
+
+        return $this;
+    }
+
+    public function getAutoacred(): ?bool
+    {
+        return $this->autoacred;
+    }
+
+    public function setAutoacred(bool $autoacred): self
+    {
+        $this->autoacred = $autoacred;
+
+        return $this;
+    }
+
+    public function getAdelantacuotas(): ?bool
+    {
+        return $this->adelantacuotas;
+    }
+
+    public function setAdelantacuotas(bool $adelantacuotas): self
+    {
+        $this->adelantacuotas = $adelantacuotas;
+
+        return $this;
+    }
+
+    public function getDiasAcred(): ?int
+    {
+        return $this->diasAcred;
+    }
+
+    public function setDiasAcred(int $diasAcred): self
+    {
+        $this->diasAcred = $diasAcred;
+
+        return $this;
+    }
+
+    public function getPagos(): ?bool
+    {
+        return $this->pagos;
+    }
+
+    public function setPagos(bool $pagos): self
+    {
+        $this->pagos = $pagos;
+
+        return $this;
+    }
+
+    public function getCobros(): ?bool
+    {
+        return $this->cobros;
+    }
+
+    public function setCobros(bool $cobros): self
+    {
+        $this->cobros = $cobros;
+
+        return $this;
+    }
+
+    public function getObs(): ?string
+    {
+        return $this->obs;
+    }
+
+    public function setObs(?string $obs): self
+    {
+        $this->obs = $obs;
+
+        return $this;
+    }
+
+    public function getEstado(): ?int
+    {
+        return $this->estado;
+    }
+
+    public function setEstado(int $estado): self
+    {
+        $this->estado = $estado;
+
+        return $this;
+    }
+
+    public function getFecha(): ?\DateTimeInterface
+    {
+        return $this->fecha;
+    }
+
+    public function setFecha(?\DateTimeInterface $fecha): self
+    {
+        $this->fecha = $fecha;
+
+        return $this;
+    }
+
+    public function getIdCaja(): ?Cajas
+    {
+        return $this->idCaja;
+    }
+
+    public function setIdCaja(?Cajas $idCaja): self
+    {
+        $this->idCaja = $idCaja;
+
+        return $this;
+    }
+
+    public function getIdConcepto(): ?Conceptos
+    {
+        return $this->idConcepto;
+    }
+
+    public function setIdConcepto(?Conceptos $idConcepto): self
+    {
+        $this->idConcepto = $idConcepto;
+
+        return $this;
+    }
+
 
 }

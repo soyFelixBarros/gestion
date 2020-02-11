@@ -91,5 +91,130 @@ class SysTags
      */
     private $extra;
 
+    public function getIdTag(): ?int
+    {
+        return $this->idTag;
+    }
+
+    public function getTablename(): ?string
+    {
+        return $this->tablename;
+    }
+
+    public function setTablename(string $tablename): self
+    {
+        $this->tablename = $tablename;
+
+        return $this;
+    }
+
+    public function getFieldname(): ?string
+    {
+        return $this->fieldname;
+    }
+
+    public function setFieldname(string $fieldname): self
+    {
+        $this->fieldname = $fieldname;
+
+        return $this;
+    }
+
+    public function getFieldtype(): ?string
+    {
+        return $this->fieldtype;
+    }
+
+    public function setFieldtype(string $fieldtype): self
+    {
+        $this->fieldtype = $fieldtype;
+
+        return $this;
+    }
+
+    public function getInputtype(): ?string
+    {
+        return $this->inputtype;
+    }
+
+    public function setInputtype(?string $inputtype): self
+    {
+        $this->inputtype = $inputtype;
+
+        return $this;
+    }
+
+    public function getFieldnullable(): ?bool
+    {
+        return $this->fieldnullable;
+    }
+
+    public function setFieldnullable(bool $fieldnullable): self
+    {
+        $this->fieldnullable = $fieldnullable;
+
+        return $this;
+    }
+
+    public function getFielddefault(): ?string
+    {
+        return $this->fielddefault;
+    }
+
+    public function setFielddefault(?string $fielddefault): self
+    {
+        $this->fielddefault = $fielddefault;
+
+        return $this;
+    }
+
+    public function getLabel(): ?string
+    {
+        return $this->label;
+    }
+
+    public function setLabel(string $label): self
+    {
+        $this->label = $label;
+
+        return $this;
+    }
+
+    public function getInternal(): ?bool
+    {
+        return $this->internal;
+    }
+
+    public function setInternal(bool $internal): self
+    {
+        $this->internal = $internal;
+
+        return $this;
+    }
+
+    public function getAccess(): ?int
+    {
+        return $this->access;
+    }
+
+    public function setAccess(int $access): self
+    {
+        $this->access = $access;
+
+        return $this;
+    }
+
+    public function getExtra(): ?string
+    {
+        return $this->extra;
+    }
+
+    public function setExtra(?string $extra): self
+    {
+        $this->extra = $extra;
+
+        return $this;
+    }
+
 
 }

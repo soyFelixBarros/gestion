@@ -100,5 +100,130 @@ class PagosValores
      */
     private $idSucursal;
 
+    public function getIdValor(): ?int
+    {
+        return $this->idValor;
+    }
+
+    public function getNombre(): ?string
+    {
+        return $this->nombre;
+    }
+
+    public function setNombre(string $nombre): self
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    public function getObs(): ?string
+    {
+        return $this->obs;
+    }
+
+    public function setObs(?string $obs): self
+    {
+        $this->obs = $obs;
+
+        return $this;
+    }
+
+    public function getEstado(): ?int
+    {
+        return $this->estado;
+    }
+
+    public function setEstado(int $estado): self
+    {
+        $this->estado = $estado;
+
+        return $this;
+    }
+
+    public function getFecha(): ?\DateTimeInterface
+    {
+        return $this->fecha;
+    }
+
+    public function setFecha(?\DateTimeInterface $fecha): self
+    {
+        $this->fecha = $fecha;
+
+        return $this;
+    }
+
+    public function getIdItem(): ?int
+    {
+        return $this->idItem;
+    }
+
+    public function setIdItem(?int $idItem): self
+    {
+        $this->idItem = $idItem;
+
+        return $this;
+    }
+
+    public function getImporte(): ?string
+    {
+        return $this->importe;
+    }
+
+    public function setImporte(string $importe): self
+    {
+        $this->importe = $importe;
+
+        return $this;
+    }
+
+    public function getNumero(): ?string
+    {
+        return $this->numero;
+    }
+
+    public function setNumero(?string $numero): self
+    {
+        $this->numero = $numero;
+
+        return $this;
+    }
+
+    public function getIdFormapago(): ?Formaspago
+    {
+        return $this->idFormapago;
+    }
+
+    public function setIdFormapago(?Formaspago $idFormapago): self
+    {
+        $this->idFormapago = $idFormapago;
+
+        return $this;
+    }
+
+    public function getIdRecibo(): ?Recibos
+    {
+        return $this->idRecibo;
+    }
+
+    public function setIdRecibo(?Recibos $idRecibo): self
+    {
+        $this->idRecibo = $idRecibo;
+
+        return $this;
+    }
+
+    public function getIdSucursal(): ?Sucursales
+    {
+        return $this->idSucursal;
+    }
+
+    public function setIdSucursal(?Sucursales $idSucursal): self
+    {
+        $this->idSucursal = $idSucursal;
+
+        return $this;
+    }
+
 
 }

@@ -49,5 +49,58 @@ class SysQuickpaste
      */
     private $fecha;
 
+    public function getIdPaste(): ?int
+    {
+        return $this->idPaste;
+    }
+
+    public function getTexto(): ?string
+    {
+        return $this->texto;
+    }
+
+    public function setTexto(string $texto): self
+    {
+        $this->texto = $texto;
+
+        return $this;
+    }
+
+    public function getEstacion(): ?string
+    {
+        return $this->estacion;
+    }
+
+    public function setEstacion(?string $estacion): self
+    {
+        $this->estacion = $estacion;
+
+        return $this;
+    }
+
+    public function getUsuario(): ?int
+    {
+        return $this->usuario;
+    }
+
+    public function setUsuario(?int $usuario): self
+    {
+        $this->usuario = $usuario;
+
+        return $this;
+    }
+
+    public function getFecha(): ?\DateTimeInterface
+    {
+        return $this->fecha;
+    }
+
+    public function setFecha(?\DateTimeInterface $fecha): self
+    {
+        $this->fecha = $fecha;
+
+        return $this;
+    }
+
 
 }

@@ -136,5 +136,202 @@ class Impresoras
      */
     private $idSucursal;
 
+    public function getIdImpresora(): ?int
+    {
+        return $this->idImpresora;
+    }
+
+    public function getNombre(): ?string
+    {
+        return $this->nombre;
+    }
+
+    public function setNombre(string $nombre): self
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    public function getEstacion(): ?string
+    {
+        return $this->estacion;
+    }
+
+    public function setEstacion(?string $estacion): self
+    {
+        $this->estacion = $estacion;
+
+        return $this;
+    }
+
+    public function getDispositivo(): ?string
+    {
+        return $this->dispositivo;
+    }
+
+    public function setDispositivo(?string $dispositivo): self
+    {
+        $this->dispositivo = $dispositivo;
+
+        return $this;
+    }
+
+    public function getBandeja(): ?string
+    {
+        return $this->bandeja;
+    }
+
+    public function setBandeja(?string $bandeja): self
+    {
+        $this->bandeja = $bandeja;
+
+        return $this;
+    }
+
+    public function getUbicacion(): ?string
+    {
+        return $this->ubicacion;
+    }
+
+    public function setUbicacion(?string $ubicacion): self
+    {
+        $this->ubicacion = $ubicacion;
+
+        return $this;
+    }
+
+    public function getTipo(): ?bool
+    {
+        return $this->tipo;
+    }
+
+    public function setTipo(bool $tipo): self
+    {
+        $this->tipo = $tipo;
+
+        return $this;
+    }
+
+    public function getCarga(): ?bool
+    {
+        return $this->carga;
+    }
+
+    public function setCarga(bool $carga): self
+    {
+        $this->carga = $carga;
+
+        return $this;
+    }
+
+    public function getTalonario(): ?bool
+    {
+        return $this->talonario;
+    }
+
+    public function setTalonario(bool $talonario): self
+    {
+        $this->talonario = $talonario;
+
+        return $this;
+    }
+
+    public function getFiscalModelo(): ?int
+    {
+        return $this->fiscalModelo;
+    }
+
+    public function setFiscalModelo(?int $fiscalModelo): self
+    {
+        $this->fiscalModelo = $fiscalModelo;
+
+        return $this;
+    }
+
+    public function getFiscalBps(): ?int
+    {
+        return $this->fiscalBps;
+    }
+
+    public function setFiscalBps(?int $fiscalBps): self
+    {
+        $this->fiscalBps = $fiscalBps;
+
+        return $this;
+    }
+
+    public function getFiscalUltimoz(): ?\DateTimeInterface
+    {
+        return $this->fiscalUltimoz;
+    }
+
+    public function setFiscalUltimoz(?\DateTimeInterface $fiscalUltimoz): self
+    {
+        $this->fiscalUltimoz = $fiscalUltimoz;
+
+        return $this;
+    }
+
+    public function getLsa(): ?\DateTimeInterface
+    {
+        return $this->lsa;
+    }
+
+    public function setLsa(?\DateTimeInterface $lsa): self
+    {
+        $this->lsa = $lsa;
+
+        return $this;
+    }
+
+    public function getObs(): ?string
+    {
+        return $this->obs;
+    }
+
+    public function setObs(?string $obs): self
+    {
+        $this->obs = $obs;
+
+        return $this;
+    }
+
+    public function getEstado(): ?int
+    {
+        return $this->estado;
+    }
+
+    public function setEstado(int $estado): self
+    {
+        $this->estado = $estado;
+
+        return $this;
+    }
+
+    public function getFecha(): ?\DateTimeInterface
+    {
+        return $this->fecha;
+    }
+
+    public function setFecha(?\DateTimeInterface $fecha): self
+    {
+        $this->fecha = $fecha;
+
+        return $this;
+    }
+
+    public function getIdSucursal(): ?Sucursales
+    {
+        return $this->idSucursal;
+    }
+
+    public function setIdSucursal(?Sucursales $idSucursal): self
+    {
+        $this->idSucursal = $idSucursal;
+
+        return $this;
+    }
+
 
 }

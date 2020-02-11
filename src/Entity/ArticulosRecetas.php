@@ -45,5 +45,46 @@ class ArticulosRecetas
      */
     private $idArticulo;
 
+    public function getIdReceta(): ?int
+    {
+        return $this->idReceta;
+    }
+
+    public function getIdItem(): ?int
+    {
+        return $this->idItem;
+    }
+
+    public function setIdItem(int $idItem): self
+    {
+        $this->idItem = $idItem;
+
+        return $this;
+    }
+
+    public function getCantidad(): ?string
+    {
+        return $this->cantidad;
+    }
+
+    public function setCantidad(string $cantidad): self
+    {
+        $this->cantidad = $cantidad;
+
+        return $this;
+    }
+
+    public function getIdArticulo(): ?Articulos
+    {
+        return $this->idArticulo;
+    }
+
+    public function setIdArticulo(?Articulos $idArticulo): self
+    {
+        $this->idArticulo = $idArticulo;
+
+        return $this;
+    }
+
 
 }

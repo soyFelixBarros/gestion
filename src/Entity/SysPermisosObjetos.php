@@ -105,5 +105,154 @@ class SysPermisosObjetos
      */
     private $extracNombre;
 
+    public function getIdObjeto(): ?int
+    {
+        return $this->idObjeto;
+    }
+
+    public function getNombre(): ?string
+    {
+        return $this->nombre;
+    }
+
+    public function setNombre(string $nombre): self
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    public function getObs(): ?string
+    {
+        return $this->obs;
+    }
+
+    public function setObs(?string $obs): self
+    {
+        $this->obs = $obs;
+
+        return $this;
+    }
+
+    public function getEstado(): ?int
+    {
+        return $this->estado;
+    }
+
+    public function setEstado(int $estado): self
+    {
+        $this->estado = $estado;
+
+        return $this;
+    }
+
+    public function getFecha(): ?\DateTimeInterface
+    {
+        return $this->fecha;
+    }
+
+    public function setFecha(?\DateTimeInterface $fecha): self
+    {
+        $this->fecha = $fecha;
+
+        return $this;
+    }
+
+    public function getTipo(): ?string
+    {
+        return $this->tipo;
+    }
+
+    public function setTipo(string $tipo): self
+    {
+        $this->tipo = $tipo;
+
+        return $this;
+    }
+
+    public function getClase(): ?string
+    {
+        return $this->clase;
+    }
+
+    public function setClase(string $clase): self
+    {
+        $this->clase = $clase;
+
+        return $this;
+    }
+
+    public function getExtra1Nombre(): ?string
+    {
+        return $this->extra1Nombre;
+    }
+
+    public function setExtra1Nombre(?string $extra1Nombre): self
+    {
+        $this->extra1Nombre = $extra1Nombre;
+
+        return $this;
+    }
+
+    public function getExtra2Nombre(): ?string
+    {
+        return $this->extra2Nombre;
+    }
+
+    public function setExtra2Nombre(?string $extra2Nombre): self
+    {
+        $this->extra2Nombre = $extra2Nombre;
+
+        return $this;
+    }
+
+    public function getExtra3Nombre(): ?string
+    {
+        return $this->extra3Nombre;
+    }
+
+    public function setExtra3Nombre(?string $extra3Nombre): self
+    {
+        $this->extra3Nombre = $extra3Nombre;
+
+        return $this;
+    }
+
+    public function getExtraaNombre(): ?string
+    {
+        return $this->extraaNombre;
+    }
+
+    public function setExtraaNombre(?string $extraaNombre): self
+    {
+        $this->extraaNombre = $extraaNombre;
+
+        return $this;
+    }
+
+    public function getExtrabNombre(): ?string
+    {
+        return $this->extrabNombre;
+    }
+
+    public function setExtrabNombre(?string $extrabNombre): self
+    {
+        $this->extrabNombre = $extrabNombre;
+
+        return $this;
+    }
+
+    public function getExtracNombre(): ?string
+    {
+        return $this->extracNombre;
+    }
+
+    public function setExtracNombre(?string $extracNombre): self
+    {
+        $this->extracNombre = $extracNombre;
+
+        return $this;
+    }
+
 
 }

@@ -76,5 +76,94 @@ class TicketsEventos
      */
     private $idTicket;
 
+    public function getIdEvento(): ?int
+    {
+        return $this->idEvento;
+    }
+
+    public function getFecha(): ?\DateTimeInterface
+    {
+        return $this->fecha;
+    }
+
+    public function setFecha(?\DateTimeInterface $fecha): self
+    {
+        $this->fecha = $fecha;
+
+        return $this;
+    }
+
+    public function getDescripcion(): ?string
+    {
+        return $this->descripcion;
+    }
+
+    public function setDescripcion(?string $descripcion): self
+    {
+        $this->descripcion = $descripcion;
+
+        return $this;
+    }
+
+    public function getMinutosTecnico(): ?int
+    {
+        return $this->minutosTecnico;
+    }
+
+    public function setMinutosTecnico(int $minutosTecnico): self
+    {
+        $this->minutosTecnico = $minutosTecnico;
+
+        return $this;
+    }
+
+    public function getEstado(): ?bool
+    {
+        return $this->estado;
+    }
+
+    public function setEstado(bool $estado): self
+    {
+        $this->estado = $estado;
+
+        return $this;
+    }
+
+    public function getPrivado(): ?bool
+    {
+        return $this->privado;
+    }
+
+    public function setPrivado(bool $privado): self
+    {
+        $this->privado = $privado;
+
+        return $this;
+    }
+
+    public function getIdTecnico(): ?Personas
+    {
+        return $this->idTecnico;
+    }
+
+    public function setIdTecnico(?Personas $idTecnico): self
+    {
+        $this->idTecnico = $idTecnico;
+
+        return $this;
+    }
+
+    public function getIdTicket(): ?Tickets
+    {
+        return $this->idTicket;
+    }
+
+    public function setIdTicket(?Tickets $idTicket): self
+    {
+        $this->idTicket = $idTicket;
+
+        return $this;
+    }
+
 
 }

@@ -2,6 +2,8 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -291,6 +293,437 @@ class Comprob
     {
         $this->idComprobRel = new \Doctrine\Common\Collections\ArrayCollection();
         $this->idRecibo = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    public function getIdComprob(): ?int
+    {
+        return $this->idComprob;
+    }
+
+    public function getTipoFac(): ?string
+    {
+        return $this->tipoFac;
+    }
+
+    public function setTipoFac(string $tipoFac): self
+    {
+        $this->tipoFac = $tipoFac;
+
+        return $this;
+    }
+
+    public function getPv(): ?bool
+    {
+        return $this->pv;
+    }
+
+    public function setPv(bool $pv): self
+    {
+        $this->pv = $pv;
+
+        return $this;
+    }
+
+    public function getNumero(): ?int
+    {
+        return $this->numero;
+    }
+
+    public function setNumero(int $numero): self
+    {
+        $this->numero = $numero;
+
+        return $this;
+    }
+
+    public function getNombre(): ?string
+    {
+        return $this->nombre;
+    }
+
+    public function setNombre(string $nombre): self
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    public function getFecha(): ?\DateTimeInterface
+    {
+        return $this->fecha;
+    }
+
+    public function setFecha(?\DateTimeInterface $fecha): self
+    {
+        $this->fecha = $fecha;
+
+        return $this;
+    }
+
+    public function getSubtotal(): ?string
+    {
+        return $this->subtotal;
+    }
+
+    public function setSubtotal(string $subtotal): self
+    {
+        $this->subtotal = $subtotal;
+
+        return $this;
+    }
+
+    public function getDescuento(): ?string
+    {
+        return $this->descuento;
+    }
+
+    public function setDescuento(string $descuento): self
+    {
+        $this->descuento = $descuento;
+
+        return $this;
+    }
+
+    public function getInteres(): ?string
+    {
+        return $this->interes;
+    }
+
+    public function setInteres(string $interes): self
+    {
+        $this->interes = $interes;
+
+        return $this;
+    }
+
+    public function getTotal(): ?string
+    {
+        return $this->total;
+    }
+
+    public function setTotal(string $total): self
+    {
+        $this->total = $total;
+
+        return $this;
+    }
+
+    public function getTotalreal(): ?string
+    {
+        return $this->totalreal;
+    }
+
+    public function setTotalreal(string $totalreal): self
+    {
+        $this->totalreal = $totalreal;
+
+        return $this;
+    }
+
+    public function getCuotas(): ?bool
+    {
+        return $this->cuotas;
+    }
+
+    public function setCuotas(bool $cuotas): self
+    {
+        $this->cuotas = $cuotas;
+
+        return $this;
+    }
+
+    public function getIva(): ?string
+    {
+        return $this->iva;
+    }
+
+    public function setIva(string $iva): self
+    {
+        $this->iva = $iva;
+
+        return $this;
+    }
+
+    public function getObs(): ?string
+    {
+        return $this->obs;
+    }
+
+    public function setObs(?string $obs): self
+    {
+        $this->obs = $obs;
+
+        return $this;
+    }
+
+    public function getImpresa(): ?bool
+    {
+        return $this->impresa;
+    }
+
+    public function setImpresa(bool $impresa): self
+    {
+        $this->impresa = $impresa;
+
+        return $this;
+    }
+
+    public function getAnulada(): ?bool
+    {
+        return $this->anulada;
+    }
+
+    public function setAnulada(bool $anulada): self
+    {
+        $this->anulada = $anulada;
+
+        return $this;
+    }
+
+    public function getCancelado(): ?string
+    {
+        return $this->cancelado;
+    }
+
+    public function setCancelado(string $cancelado): self
+    {
+        $this->cancelado = $cancelado;
+
+        return $this;
+    }
+
+    public function getEstado(): ?bool
+    {
+        return $this->estado;
+    }
+
+    public function setEstado(bool $estado): self
+    {
+        $this->estado = $estado;
+
+        return $this;
+    }
+
+    public function getGastosenvio(): ?string
+    {
+        return $this->gastosenvio;
+    }
+
+    public function setGastosenvio(string $gastosenvio): self
+    {
+        $this->gastosenvio = $gastosenvio;
+
+        return $this;
+    }
+
+    public function getOtrosgastos(): ?string
+    {
+        return $this->otrosgastos;
+    }
+
+    public function setOtrosgastos(string $otrosgastos): self
+    {
+        $this->otrosgastos = $otrosgastos;
+
+        return $this;
+    }
+
+    public function getCompra(): ?bool
+    {
+        return $this->compra;
+    }
+
+    public function setCompra(bool $compra): self
+    {
+        $this->compra = $compra;
+
+        return $this;
+    }
+
+    public function getSeries(): ?string
+    {
+        return $this->series;
+    }
+
+    public function setSeries(?string $series): self
+    {
+        $this->series = $series;
+
+        return $this;
+    }
+
+    public function getCaeNumero(): ?string
+    {
+        return $this->caeNumero;
+    }
+
+    public function setCaeNumero(?string $caeNumero): self
+    {
+        $this->caeNumero = $caeNumero;
+
+        return $this;
+    }
+
+    public function getCaeVencimiento(): ?\DateTimeInterface
+    {
+        return $this->caeVencimiento;
+    }
+
+    public function setCaeVencimiento(?\DateTimeInterface $caeVencimiento): self
+    {
+        $this->caeVencimiento = $caeVencimiento;
+
+        return $this;
+    }
+
+    public function getIdCliente(): ?Personas
+    {
+        return $this->idCliente;
+    }
+
+    public function setIdCliente(?Personas $idCliente): self
+    {
+        $this->idCliente = $idCliente;
+
+        return $this;
+    }
+
+    public function getIdComprobOrig(): ?self
+    {
+        return $this->idComprobOrig;
+    }
+
+    public function setIdComprobOrig(?self $idComprobOrig): self
+    {
+        $this->idComprobOrig = $idComprobOrig;
+
+        return $this;
+    }
+
+    public function getIdFormapago(): ?Formaspago
+    {
+        return $this->idFormapago;
+    }
+
+    public function setIdFormapago(?Formaspago $idFormapago): self
+    {
+        $this->idFormapago = $idFormapago;
+
+        return $this;
+    }
+
+    public function getIdRemito(): ?self
+    {
+        return $this->idRemito;
+    }
+
+    public function setIdRemito(?self $idRemito): self
+    {
+        $this->idRemito = $idRemito;
+
+        return $this;
+    }
+
+    public function getIdSucursal(): ?Sucursales
+    {
+        return $this->idSucursal;
+    }
+
+    public function setIdSucursal(?Sucursales $idSucursal): self
+    {
+        $this->idSucursal = $idSucursal;
+
+        return $this;
+    }
+
+    public function getIdVendedor(): ?Personas
+    {
+        return $this->idVendedor;
+    }
+
+    public function setIdVendedor(?Personas $idVendedor): self
+    {
+        $this->idVendedor = $idVendedor;
+
+        return $this;
+    }
+
+    public function getSituaciondestino(): ?ArticulosSituaciones
+    {
+        return $this->situaciondestino;
+    }
+
+    public function setSituaciondestino(?ArticulosSituaciones $situaciondestino): self
+    {
+        $this->situaciondestino = $situaciondestino;
+
+        return $this;
+    }
+
+    public function getSituacionorigen(): ?ArticulosSituaciones
+    {
+        return $this->situacionorigen;
+    }
+
+    public function setSituacionorigen(?ArticulosSituaciones $situacionorigen): self
+    {
+        $this->situacionorigen = $situacionorigen;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Comprob[]
+     */
+    public function getIdComprobRel(): Collection
+    {
+        return $this->idComprobRel;
+    }
+
+    public function addIdComprobRel(Comprob $idComprobRel): self
+    {
+        if (!$this->idComprobRel->contains($idComprobRel)) {
+            $this->idComprobRel[] = $idComprobRel;
+        }
+
+        return $this;
+    }
+
+    public function removeIdComprobRel(Comprob $idComprobRel): self
+    {
+        if ($this->idComprobRel->contains($idComprobRel)) {
+            $this->idComprobRel->removeElement($idComprobRel);
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Recibos[]
+     */
+    public function getIdRecibo(): Collection
+    {
+        return $this->idRecibo;
+    }
+
+    public function addIdRecibo(Recibos $idRecibo): self
+    {
+        if (!$this->idRecibo->contains($idRecibo)) {
+            $this->idRecibo[] = $idRecibo;
+            $idRecibo->addIdComprob($this);
+        }
+
+        return $this;
+    }
+
+    public function removeIdRecibo(Recibos $idRecibo): self
+    {
+        if ($this->idRecibo->contains($idRecibo)) {
+            $this->idRecibo->removeElement($idRecibo);
+            $idRecibo->removeIdComprob($this);
+        }
+
+        return $this;
     }
 
 }

@@ -195,5 +195,298 @@ class DocumentosTipos
      */
     private $situacionorigen;
 
+    public function getIdTipo(): ?int
+    {
+        return $this->idTipo;
+    }
+
+    public function getLetra(): ?string
+    {
+        return $this->letra;
+    }
+
+    public function setLetra(string $letra): self
+    {
+        $this->letra = $letra;
+
+        return $this;
+    }
+
+    public function getLetrasola(): ?string
+    {
+        return $this->letrasola;
+    }
+
+    public function setLetrasola(string $letrasola): self
+    {
+        $this->letrasola = $letrasola;
+
+        return $this;
+    }
+
+    public function getNombre(): ?string
+    {
+        return $this->nombre;
+    }
+
+    public function setNombre(string $nombre): self
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    public function getNombrelargo(): ?string
+    {
+        return $this->nombrelargo;
+    }
+
+    public function setNombrelargo(string $nombrelargo): self
+    {
+        $this->nombrelargo = $nombrelargo;
+
+        return $this;
+    }
+
+    public function getObs(): ?string
+    {
+        return $this->obs;
+    }
+
+    public function setObs(?string $obs): self
+    {
+        $this->obs = $obs;
+
+        return $this;
+    }
+
+    public function getEstado(): ?int
+    {
+        return $this->estado;
+    }
+
+    public function setEstado(int $estado): self
+    {
+        $this->estado = $estado;
+
+        return $this;
+    }
+
+    public function getFecha(): ?\DateTimeInterface
+    {
+        return $this->fecha;
+    }
+
+    public function setFecha(?\DateTimeInterface $fecha): self
+    {
+        $this->fecha = $fecha;
+
+        return $this;
+    }
+
+    public function getTabla(): ?string
+    {
+        return $this->tabla;
+    }
+
+    public function setTabla(?string $tabla): self
+    {
+        $this->tabla = $tabla;
+
+        return $this;
+    }
+
+    public function getTipo(): ?string
+    {
+        return $this->tipo;
+    }
+
+    public function setTipo(?string $tipo): self
+    {
+        $this->tipo = $tipo;
+
+        return $this;
+    }
+
+    public function getTipobase(): ?string
+    {
+        return $this->tipobase;
+    }
+
+    public function setTipobase(?string $tipobase): self
+    {
+        $this->tipobase = $tipobase;
+
+        return $this;
+    }
+
+    public function getVenta(): ?bool
+    {
+        return $this->venta;
+    }
+
+    public function setVenta(bool $venta): self
+    {
+        $this->venta = $venta;
+
+        return $this;
+    }
+
+    public function getCompra(): ?bool
+    {
+        return $this->compra;
+    }
+
+    public function setCompra(bool $compra): self
+    {
+        $this->compra = $compra;
+
+        return $this;
+    }
+
+    public function getPermitedisciva(): ?bool
+    {
+        return $this->permitedisciva;
+    }
+
+    public function setPermitedisciva(bool $permitedisciva): self
+    {
+        $this->permitedisciva = $permitedisciva;
+
+        return $this;
+    }
+
+    public function getSiempredisciva(): ?bool
+    {
+        return $this->siempredisciva;
+    }
+
+    public function setSiempredisciva(bool $siempredisciva): self
+    {
+        $this->siempredisciva = $siempredisciva;
+
+        return $this;
+    }
+
+    public function getCargapapel(): ?bool
+    {
+        return $this->cargapapel;
+    }
+
+    public function setCargapapel(bool $cargapapel): self
+    {
+        $this->cargapapel = $cargapapel;
+
+        return $this;
+    }
+
+    public function getDirecCtacte(): ?string
+    {
+        return $this->direcCtacte;
+    }
+
+    public function setDirecCtacte(string $direcCtacte): self
+    {
+        $this->direcCtacte = $direcCtacte;
+
+        return $this;
+    }
+
+    public function getMueveStock(): ?string
+    {
+        return $this->mueveStock;
+    }
+
+    public function setMueveStock(string $mueveStock): self
+    {
+        $this->mueveStock = $mueveStock;
+
+        return $this;
+    }
+
+    public function getNumerarGuardar(): ?bool
+    {
+        return $this->numerarGuardar;
+    }
+
+    public function setNumerarGuardar(bool $numerarGuardar): self
+    {
+        $this->numerarGuardar = $numerarGuardar;
+
+        return $this;
+    }
+
+    public function getImprimirGuardar(): ?bool
+    {
+        return $this->imprimirGuardar;
+    }
+
+    public function setImprimirGuardar(bool $imprimirGuardar): self
+    {
+        $this->imprimirGuardar = $imprimirGuardar;
+
+        return $this;
+    }
+
+    public function getNumerarImprimir(): ?bool
+    {
+        return $this->numerarImprimir;
+    }
+
+    public function setNumerarImprimir(bool $numerarImprimir): self
+    {
+        $this->numerarImprimir = $numerarImprimir;
+
+        return $this;
+    }
+
+    public function getImprimirRepetir(): ?bool
+    {
+        return $this->imprimirRepetir;
+    }
+
+    public function setImprimirRepetir(bool $imprimirRepetir): self
+    {
+        $this->imprimirRepetir = $imprimirRepetir;
+
+        return $this;
+    }
+
+    public function getImprimirModificar(): ?bool
+    {
+        return $this->imprimirModificar;
+    }
+
+    public function setImprimirModificar(bool $imprimirModificar): self
+    {
+        $this->imprimirModificar = $imprimirModificar;
+
+        return $this;
+    }
+
+    public function getSituaciondestino(): ?ArticulosSituaciones
+    {
+        return $this->situaciondestino;
+    }
+
+    public function setSituaciondestino(?ArticulosSituaciones $situaciondestino): self
+    {
+        $this->situaciondestino = $situaciondestino;
+
+        return $this;
+    }
+
+    public function getSituacionorigen(): ?ArticulosSituaciones
+    {
+        return $this->situacionorigen;
+    }
+
+    public function setSituacionorigen(?ArticulosSituaciones $situacionorigen): self
+    {
+        $this->situacionorigen = $situacionorigen;
+
+        return $this;
+    }
+
 
 }

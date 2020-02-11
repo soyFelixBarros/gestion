@@ -35,5 +35,34 @@ class SysBlobs
      */
     private $fecha;
 
+    public function getIdBlob(): ?int
+    {
+        return $this->idBlob;
+    }
+
+    public function getImagen()
+    {
+        return $this->imagen;
+    }
+
+    public function setImagen($imagen): self
+    {
+        $this->imagen = $imagen;
+
+        return $this;
+    }
+
+    public function getFecha(): ?\DateTimeInterface
+    {
+        return $this->fecha;
+    }
+
+    public function setFecha(?\DateTimeInterface $fecha): self
+    {
+        $this->fecha = $fecha;
+
+        return $this;
+    }
+
 
 }

@@ -105,5 +105,154 @@ class Vencimientos
      */
     private $importe = '0.0000';
 
+    public function getIdVencimiento(): ?int
+    {
+        return $this->idVencimiento;
+    }
+
+    public function getNombre(): ?string
+    {
+        return $this->nombre;
+    }
+
+    public function setNombre(string $nombre): self
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    public function getObs(): ?string
+    {
+        return $this->obs;
+    }
+
+    public function setObs(?string $obs): self
+    {
+        $this->obs = $obs;
+
+        return $this;
+    }
+
+    public function getEstado(): ?int
+    {
+        return $this->estado;
+    }
+
+    public function setEstado(int $estado): self
+    {
+        $this->estado = $estado;
+
+        return $this;
+    }
+
+    public function getFecha(): ?\DateTimeInterface
+    {
+        return $this->fecha;
+    }
+
+    public function setFecha(?\DateTimeInterface $fecha): self
+    {
+        $this->fecha = $fecha;
+
+        return $this;
+    }
+
+    public function getFechaInicio(): ?\DateTimeInterface
+    {
+        return $this->fechaInicio;
+    }
+
+    public function setFechaInicio(\DateTimeInterface $fechaInicio): self
+    {
+        $this->fechaInicio = $fechaInicio;
+
+        return $this;
+    }
+
+    public function getFechaProxima(): ?\DateTimeInterface
+    {
+        return $this->fechaProxima;
+    }
+
+    public function setFechaProxima(?\DateTimeInterface $fechaProxima): self
+    {
+        $this->fechaProxima = $fechaProxima;
+
+        return $this;
+    }
+
+    public function getFechaFin(): ?\DateTimeInterface
+    {
+        return $this->fechaFin;
+    }
+
+    public function setFechaFin(?\DateTimeInterface $fechaFin): self
+    {
+        $this->fechaFin = $fechaFin;
+
+        return $this;
+    }
+
+    public function getFrecuencia(): ?string
+    {
+        return $this->frecuencia;
+    }
+
+    public function setFrecuencia(string $frecuencia): self
+    {
+        $this->frecuencia = $frecuencia;
+
+        return $this;
+    }
+
+    public function getRepetir(): ?bool
+    {
+        return $this->repetir;
+    }
+
+    public function setRepetir(bool $repetir): self
+    {
+        $this->repetir = $repetir;
+
+        return $this;
+    }
+
+    public function getOcurrencia(): ?int
+    {
+        return $this->ocurrencia;
+    }
+
+    public function setOcurrencia(int $ocurrencia): self
+    {
+        $this->ocurrencia = $ocurrencia;
+
+        return $this;
+    }
+
+    public function getIdConcepto(): ?int
+    {
+        return $this->idConcepto;
+    }
+
+    public function setIdConcepto(?int $idConcepto): self
+    {
+        $this->idConcepto = $idConcepto;
+
+        return $this;
+    }
+
+    public function getImporte(): ?string
+    {
+        return $this->importe;
+    }
+
+    public function setImporte(string $importe): self
+    {
+        $this->importe = $importe;
+
+        return $this;
+    }
+
 
 }

@@ -59,5 +59,70 @@ class SysComments
      */
     private $idPersona;
 
+    public function getIdComment(): ?int
+    {
+        return $this->idComment;
+    }
+
+    public function getTablas(): ?string
+    {
+        return $this->tablas;
+    }
+
+    public function setTablas(string $tablas): self
+    {
+        $this->tablas = $tablas;
+
+        return $this;
+    }
+
+    public function getItemId(): ?int
+    {
+        return $this->itemId;
+    }
+
+    public function setItemId(int $itemId): self
+    {
+        $this->itemId = $itemId;
+
+        return $this;
+    }
+
+    public function getFecha(): ?\DateTimeInterface
+    {
+        return $this->fecha;
+    }
+
+    public function setFecha(?\DateTimeInterface $fecha): self
+    {
+        $this->fecha = $fecha;
+
+        return $this;
+    }
+
+    public function getObs(): ?string
+    {
+        return $this->obs;
+    }
+
+    public function setObs(?string $obs): self
+    {
+        $this->obs = $obs;
+
+        return $this;
+    }
+
+    public function getIdPersona(): ?Personas
+    {
+        return $this->idPersona;
+    }
+
+    public function setIdPersona(?Personas $idPersona): self
+    {
+        $this->idPersona = $idPersona;
+
+        return $this;
+    }
+
 
 }

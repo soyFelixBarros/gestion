@@ -73,5 +73,94 @@ class SysLog
      */
     private $usuario;
 
+    public function getIdLog(): ?int
+    {
+        return $this->idLog;
+    }
+
+    public function getFecha(): ?\DateTimeInterface
+    {
+        return $this->fecha;
+    }
+
+    public function setFecha(?\DateTimeInterface $fecha): self
+    {
+        $this->fecha = $fecha;
+
+        return $this;
+    }
+
+    public function getEstacion(): ?string
+    {
+        return $this->estacion;
+    }
+
+    public function setEstacion(string $estacion): self
+    {
+        $this->estacion = $estacion;
+
+        return $this;
+    }
+
+    public function getComando(): ?string
+    {
+        return $this->comando;
+    }
+
+    public function setComando(string $comando): self
+    {
+        $this->comando = $comando;
+
+        return $this;
+    }
+
+    public function getTabla(): ?string
+    {
+        return $this->tabla;
+    }
+
+    public function setTabla(?string $tabla): self
+    {
+        $this->tabla = $tabla;
+
+        return $this;
+    }
+
+    public function getItemId(): ?int
+    {
+        return $this->itemId;
+    }
+
+    public function setItemId(?int $itemId): self
+    {
+        $this->itemId = $itemId;
+
+        return $this;
+    }
+
+    public function getExtra1(): ?string
+    {
+        return $this->extra1;
+    }
+
+    public function setExtra1(?string $extra1): self
+    {
+        $this->extra1 = $extra1;
+
+        return $this;
+    }
+
+    public function getUsuario(): ?Personas
+    {
+        return $this->usuario;
+    }
+
+    public function setUsuario(?Personas $usuario): self
+    {
+        $this->usuario = $usuario;
+
+        return $this;
+    }
+
 
 }

@@ -76,5 +76,94 @@ class TicketsArticulos
      */
     private $idTicket;
 
+    public function getIdTicketArticulo(): ?int
+    {
+        return $this->idTicketArticulo;
+    }
+
+    public function getNombre(): ?string
+    {
+        return $this->nombre;
+    }
+
+    public function setNombre(string $nombre): self
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    public function getOrden(): ?bool
+    {
+        return $this->orden;
+    }
+
+    public function setOrden(bool $orden): self
+    {
+        $this->orden = $orden;
+
+        return $this;
+    }
+
+    public function getCantidad(): ?string
+    {
+        return $this->cantidad;
+    }
+
+    public function setCantidad(string $cantidad): self
+    {
+        $this->cantidad = $cantidad;
+
+        return $this;
+    }
+
+    public function getPrecio(): ?string
+    {
+        return $this->precio;
+    }
+
+    public function setPrecio(string $precio): self
+    {
+        $this->precio = $precio;
+
+        return $this;
+    }
+
+    public function getDescuento(): ?string
+    {
+        return $this->descuento;
+    }
+
+    public function setDescuento(string $descuento): self
+    {
+        $this->descuento = $descuento;
+
+        return $this;
+    }
+
+    public function getIdArticulo(): ?Articulos
+    {
+        return $this->idArticulo;
+    }
+
+    public function setIdArticulo(?Articulos $idArticulo): self
+    {
+        $this->idArticulo = $idArticulo;
+
+        return $this;
+    }
+
+    public function getIdTicket(): ?Tickets
+    {
+        return $this->idTicket;
+    }
+
+    public function setIdTicket(?Tickets $idTicket): self
+    {
+        $this->idTicket = $idTicket;
+
+        return $this;
+    }
+
 
 }

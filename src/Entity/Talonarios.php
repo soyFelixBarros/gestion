@@ -56,5 +56,70 @@ class Talonarios
      */
     private $estado;
 
+    public function getIdTalonario(): ?int
+    {
+        return $this->idTalonario;
+    }
+
+    public function getTipoComprob(): ?string
+    {
+        return $this->tipoComprob;
+    }
+
+    public function setTipoComprob(string $tipoComprob): self
+    {
+        $this->tipoComprob = $tipoComprob;
+
+        return $this;
+    }
+
+    public function getPv(): ?bool
+    {
+        return $this->pv;
+    }
+
+    public function setPv(bool $pv): self
+    {
+        $this->pv = $pv;
+
+        return $this;
+    }
+
+    public function getDesde(): ?int
+    {
+        return $this->desde;
+    }
+
+    public function setDesde(int $desde): self
+    {
+        $this->desde = $desde;
+
+        return $this;
+    }
+
+    public function getHasta(): ?int
+    {
+        return $this->hasta;
+    }
+
+    public function setHasta(int $hasta): self
+    {
+        $this->hasta = $hasta;
+
+        return $this;
+    }
+
+    public function getEstado(): ?int
+    {
+        return $this->estado;
+    }
+
+    public function setEstado(int $estado): self
+    {
+        $this->estado = $estado;
+
+        return $this;
+    }
+
 
 }

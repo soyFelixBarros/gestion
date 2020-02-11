@@ -199,5 +199,274 @@ class Tickets
      */
     private $idTipoTicket;
 
+    public function getIdTicket(): ?int
+    {
+        return $this->idTicket;
+    }
+
+    public function getNombre(): ?string
+    {
+        return $this->nombre;
+    }
+
+    public function setNombre(string $nombre): self
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    public function getObs(): ?string
+    {
+        return $this->obs;
+    }
+
+    public function setObs(?string $obs): self
+    {
+        $this->obs = $obs;
+
+        return $this;
+    }
+
+    public function getEstado(): ?int
+    {
+        return $this->estado;
+    }
+
+    public function setEstado(int $estado): self
+    {
+        $this->estado = $estado;
+
+        return $this;
+    }
+
+    public function getFechaIngreso(): ?\DateTimeInterface
+    {
+        return $this->fechaIngreso;
+    }
+
+    public function setFechaIngreso(\DateTimeInterface $fechaIngreso): self
+    {
+        $this->fechaIngreso = $fechaIngreso;
+
+        return $this;
+    }
+
+    public function getDescripcion(): ?string
+    {
+        return $this->descripcion;
+    }
+
+    public function setDescripcion(?string $descripcion): self
+    {
+        $this->descripcion = $descripcion;
+
+        return $this;
+    }
+
+    public function getPrioridad(): ?bool
+    {
+        return $this->prioridad;
+    }
+
+    public function setPrioridad(bool $prioridad): self
+    {
+        $this->prioridad = $prioridad;
+
+        return $this;
+    }
+
+    public function getMinutosTecnico(): ?int
+    {
+        return $this->minutosTecnico;
+    }
+
+    public function setMinutosTecnico(int $minutosTecnico): self
+    {
+        $this->minutosTecnico = $minutosTecnico;
+
+        return $this;
+    }
+
+    public function getPresupuesto(): ?string
+    {
+        return $this->presupuesto;
+    }
+
+    public function setPresupuesto(string $presupuesto): self
+    {
+        $this->presupuesto = $presupuesto;
+
+        return $this;
+    }
+
+    public function getArticulosDescuento(): ?string
+    {
+        return $this->articulosDescuento;
+    }
+
+    public function setArticulosDescuento(string $articulosDescuento): self
+    {
+        $this->articulosDescuento = $articulosDescuento;
+
+        return $this;
+    }
+
+    public function getPresupuestoAprobado(): ?bool
+    {
+        return $this->presupuestoAprobado;
+    }
+
+    public function setPresupuestoAprobado(bool $presupuestoAprobado): self
+    {
+        $this->presupuestoAprobado = $presupuestoAprobado;
+
+        return $this;
+    }
+
+    public function getEntregaEstimada(): ?\DateTimeInterface
+    {
+        return $this->entregaEstimada;
+    }
+
+    public function setEntregaEstimada(?\DateTimeInterface $entregaEstimada): self
+    {
+        $this->entregaEstimada = $entregaEstimada;
+
+        return $this;
+    }
+
+    public function getEntregaLimite(): ?\DateTimeInterface
+    {
+        return $this->entregaLimite;
+    }
+
+    public function setEntregaLimite(?\DateTimeInterface $entregaLimite): self
+    {
+        $this->entregaLimite = $entregaLimite;
+
+        return $this;
+    }
+
+    public function getFechaFinalizacion(): ?\DateTimeInterface
+    {
+        return $this->fechaFinalizacion;
+    }
+
+    public function setFechaFinalizacion(?\DateTimeInterface $fechaFinalizacion): self
+    {
+        $this->fechaFinalizacion = $fechaFinalizacion;
+
+        return $this;
+    }
+
+    public function getFechaSalida(): ?\DateTimeInterface
+    {
+        return $this->fechaSalida;
+    }
+
+    public function setFechaSalida(?\DateTimeInterface $fechaSalida): self
+    {
+        $this->fechaSalida = $fechaSalida;
+
+        return $this;
+    }
+
+    public function getIdComprob(): ?Comprob
+    {
+        return $this->idComprob;
+    }
+
+    public function setIdComprob(?Comprob $idComprob): self
+    {
+        $this->idComprob = $idComprob;
+
+        return $this;
+    }
+
+    public function getIdPersona(): ?Personas
+    {
+        return $this->idPersona;
+    }
+
+    public function setIdPersona(?Personas $idPersona): self
+    {
+        $this->idPersona = $idPersona;
+
+        return $this;
+    }
+
+    public function getIdPresupuesto(): ?Comprob
+    {
+        return $this->idPresupuesto;
+    }
+
+    public function setIdPresupuesto(?Comprob $idPresupuesto): self
+    {
+        $this->idPresupuesto = $idPresupuesto;
+
+        return $this;
+    }
+
+    public function getIdSucursal(): ?Sucursales
+    {
+        return $this->idSucursal;
+    }
+
+    public function setIdSucursal(?Sucursales $idSucursal): self
+    {
+        $this->idSucursal = $idSucursal;
+
+        return $this;
+    }
+
+    public function getIdTecnicoEntrega(): ?Personas
+    {
+        return $this->idTecnicoEntrega;
+    }
+
+    public function setIdTecnicoEntrega(?Personas $idTecnicoEntrega): self
+    {
+        $this->idTecnicoEntrega = $idTecnicoEntrega;
+
+        return $this;
+    }
+
+    public function getIdTecnicoRecibe(): ?Personas
+    {
+        return $this->idTecnicoRecibe;
+    }
+
+    public function setIdTecnicoRecibe(?Personas $idTecnicoRecibe): self
+    {
+        $this->idTecnicoRecibe = $idTecnicoRecibe;
+
+        return $this;
+    }
+
+    public function getIdTecnicoVerifica(): ?Personas
+    {
+        return $this->idTecnicoVerifica;
+    }
+
+    public function setIdTecnicoVerifica(?Personas $idTecnicoVerifica): self
+    {
+        $this->idTecnicoVerifica = $idTecnicoVerifica;
+
+        return $this;
+    }
+
+    public function getIdTipoTicket(): ?TicketsTipos
+    {
+        return $this->idTipoTicket;
+    }
+
+    public function setIdTipoTicket(?TicketsTipos $idTipoTicket): self
+    {
+        $this->idTipoTicket = $idTipoTicket;
+
+        return $this;
+    }
+
 
 }

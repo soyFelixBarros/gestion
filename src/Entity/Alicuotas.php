@@ -63,5 +63,82 @@ class Alicuotas
      */
     private $fecha;
 
+    public function getIdAlicuota(): ?int
+    {
+        return $this->idAlicuota;
+    }
+
+    public function getPorcentaje(): ?string
+    {
+        return $this->porcentaje;
+    }
+
+    public function setPorcentaje(string $porcentaje): self
+    {
+        $this->porcentaje = $porcentaje;
+
+        return $this;
+    }
+
+    public function getNombre(): ?string
+    {
+        return $this->nombre;
+    }
+
+    public function setNombre(string $nombre): self
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    public function getImporteMinimo(): ?string
+    {
+        return $this->importeMinimo;
+    }
+
+    public function setImporteMinimo(string $importeMinimo): self
+    {
+        $this->importeMinimo = $importeMinimo;
+
+        return $this;
+    }
+
+    public function getObs(): ?string
+    {
+        return $this->obs;
+    }
+
+    public function setObs(?string $obs): self
+    {
+        $this->obs = $obs;
+
+        return $this;
+    }
+
+    public function getEstado(): ?int
+    {
+        return $this->estado;
+    }
+
+    public function setEstado(int $estado): self
+    {
+        $this->estado = $estado;
+
+        return $this;
+    }
+
+    public function getFecha(): ?\DateTimeInterface
+    {
+        return $this->fecha;
+    }
+
+    public function setFecha(?\DateTimeInterface $fecha): self
+    {
+        $this->fecha = $fecha;
+
+        return $this;
+    }
+
 
 }

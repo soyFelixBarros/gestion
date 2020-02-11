@@ -91,5 +91,130 @@ class Margenes
      */
     private $fecha;
 
+    public function getIdMargen(): ?int
+    {
+        return $this->idMargen;
+    }
+
+    public function getNombre(): ?string
+    {
+        return $this->nombre;
+    }
+
+    public function setNombre(string $nombre): self
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    public function getSumar(): ?string
+    {
+        return $this->sumar;
+    }
+
+    public function setSumar(string $sumar): self
+    {
+        $this->sumar = $sumar;
+
+        return $this;
+    }
+
+    public function getPorcentaje(): ?string
+    {
+        return $this->porcentaje;
+    }
+
+    public function setPorcentaje(string $porcentaje): self
+    {
+        $this->porcentaje = $porcentaje;
+
+        return $this;
+    }
+
+    public function getPorcentaje2(): ?string
+    {
+        return $this->porcentaje2;
+    }
+
+    public function setPorcentaje2(string $porcentaje2): self
+    {
+        $this->porcentaje2 = $porcentaje2;
+
+        return $this;
+    }
+
+    public function getPorcentaje3(): ?string
+    {
+        return $this->porcentaje3;
+    }
+
+    public function setPorcentaje3(string $porcentaje3): self
+    {
+        $this->porcentaje3 = $porcentaje3;
+
+        return $this;
+    }
+
+    public function getSumar2(): ?string
+    {
+        return $this->sumar2;
+    }
+
+    public function setSumar2(string $sumar2): self
+    {
+        $this->sumar2 = $sumar2;
+
+        return $this;
+    }
+
+    public function getPredet(): ?bool
+    {
+        return $this->predet;
+    }
+
+    public function setPredet(bool $predet): self
+    {
+        $this->predet = $predet;
+
+        return $this;
+    }
+
+    public function getObs(): ?string
+    {
+        return $this->obs;
+    }
+
+    public function setObs(?string $obs): self
+    {
+        $this->obs = $obs;
+
+        return $this;
+    }
+
+    public function getEstado(): ?int
+    {
+        return $this->estado;
+    }
+
+    public function setEstado(int $estado): self
+    {
+        $this->estado = $estado;
+
+        return $this;
+    }
+
+    public function getFecha(): ?\DateTimeInterface
+    {
+        return $this->fecha;
+    }
+
+    public function setFecha(?\DateTimeInterface $fecha): self
+    {
+        $this->fecha = $fecha;
+
+        return $this;
+    }
+
 
 }

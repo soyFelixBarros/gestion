@@ -80,5 +80,106 @@ class TarjetasPlanes
      */
     private $idTarjeta;
 
+    public function getIdPlan(): ?int
+    {
+        return $this->idPlan;
+    }
+
+    public function getNombre(): ?string
+    {
+        return $this->nombre;
+    }
+
+    public function setNombre(string $nombre): self
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    public function getObs(): ?string
+    {
+        return $this->obs;
+    }
+
+    public function setObs(?string $obs): self
+    {
+        $this->obs = $obs;
+
+        return $this;
+    }
+
+    public function getEstado(): ?int
+    {
+        return $this->estado;
+    }
+
+    public function setEstado(int $estado): self
+    {
+        $this->estado = $estado;
+
+        return $this;
+    }
+
+    public function getFecha(): ?\DateTimeInterface
+    {
+        return $this->fecha;
+    }
+
+    public function setFecha(?\DateTimeInterface $fecha): self
+    {
+        $this->fecha = $fecha;
+
+        return $this;
+    }
+
+    public function getCuotas(): ?bool
+    {
+        return $this->cuotas;
+    }
+
+    public function setCuotas(bool $cuotas): self
+    {
+        $this->cuotas = $cuotas;
+
+        return $this;
+    }
+
+    public function getInteres(): ?string
+    {
+        return $this->interes;
+    }
+
+    public function setInteres(string $interes): self
+    {
+        $this->interes = $interes;
+
+        return $this;
+    }
+
+    public function getComision(): ?string
+    {
+        return $this->comision;
+    }
+
+    public function setComision(string $comision): self
+    {
+        $this->comision = $comision;
+
+        return $this;
+    }
+
+    public function getIdTarjeta(): ?Formaspago
+    {
+        return $this->idTarjeta;
+    }
+
+    public function setIdTarjeta(?Formaspago $idTarjeta): self
+    {
+        $this->idTarjeta = $idTarjeta;
+
+        return $this;
+    }
+
 
 }

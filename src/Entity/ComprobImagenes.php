@@ -28,5 +28,22 @@ class ComprobImagenes
      */
     private $imagen;
 
+    public function getIdComprob(): ?int
+    {
+        return $this->idComprob;
+    }
+
+    public function getImagen()
+    {
+        return $this->imagen;
+    }
+
+    public function setImagen($imagen): self
+    {
+        $this->imagen = $imagen;
+
+        return $this;
+    }
+
 
 }

@@ -33,5 +33,22 @@ class SysLabelsValues
      */
     private $idLabel;
 
+    public function getItemId(): ?int
+    {
+        return $this->itemId;
+    }
+
+    public function getIdLabel(): ?SysLabels
+    {
+        return $this->idLabel;
+    }
+
+    public function setIdLabel(?SysLabels $idLabel): self
+    {
+        $this->idLabel = $idLabel;
+
+        return $this;
+    }
+
 
 }

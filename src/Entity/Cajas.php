@@ -97,5 +97,130 @@ class Cajas
      */
     private $idMoneda;
 
+    public function getIdCaja(): ?int
+    {
+        return $this->idCaja;
+    }
+
+    public function getNumero(): ?string
+    {
+        return $this->numero;
+    }
+
+    public function setNumero(?string $numero): self
+    {
+        $this->numero = $numero;
+
+        return $this;
+    }
+
+    public function getNombre(): ?string
+    {
+        return $this->nombre;
+    }
+
+    public function setNombre(string $nombre): self
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    public function getTitular(): ?string
+    {
+        return $this->titular;
+    }
+
+    public function setTitular(string $titular): self
+    {
+        $this->titular = $titular;
+
+        return $this;
+    }
+
+    public function getTipo(): ?bool
+    {
+        return $this->tipo;
+    }
+
+    public function setTipo(bool $tipo): self
+    {
+        $this->tipo = $tipo;
+
+        return $this;
+    }
+
+    public function getCbu(): ?string
+    {
+        return $this->cbu;
+    }
+
+    public function setCbu(?string $cbu): self
+    {
+        $this->cbu = $cbu;
+
+        return $this;
+    }
+
+    public function getObs(): ?string
+    {
+        return $this->obs;
+    }
+
+    public function setObs(?string $obs): self
+    {
+        $this->obs = $obs;
+
+        return $this;
+    }
+
+    public function getEstado(): ?int
+    {
+        return $this->estado;
+    }
+
+    public function setEstado(int $estado): self
+    {
+        $this->estado = $estado;
+
+        return $this;
+    }
+
+    public function getFecha(): ?\DateTimeInterface
+    {
+        return $this->fecha;
+    }
+
+    public function setFecha(?\DateTimeInterface $fecha): self
+    {
+        $this->fecha = $fecha;
+
+        return $this;
+    }
+
+    public function getIdBanco(): ?Bancos
+    {
+        return $this->idBanco;
+    }
+
+    public function setIdBanco(?Bancos $idBanco): self
+    {
+        $this->idBanco = $idBanco;
+
+        return $this;
+    }
+
+    public function getIdMoneda(): ?Monedas
+    {
+        return $this->idMoneda;
+    }
+
+    public function setIdMoneda(?Monedas $idMoneda): self
+    {
+        $this->idMoneda = $idMoneda;
+
+        return $this;
+    }
+
 
 }

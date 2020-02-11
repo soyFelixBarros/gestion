@@ -38,5 +38,34 @@ class ArticulosCodigos
      */
     private $idProveedor;
 
+    public function getIdCodigo(): ?int
+    {
+        return $this->idCodigo;
+    }
+
+    public function getNombre(): ?string
+    {
+        return $this->nombre;
+    }
+
+    public function setNombre(string $nombre): self
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    public function getIdProveedor(): ?Personas
+    {
+        return $this->idProveedor;
+    }
+
+    public function setIdProveedor(?Personas $idProveedor): self
+    {
+        $this->idProveedor = $idProveedor;
+
+        return $this;
+    }
+
 
 }

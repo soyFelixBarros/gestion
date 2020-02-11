@@ -42,5 +42,46 @@ class TicketsEstados
      */
     private $estado = '0';
 
+    public function getIdTicketEstado(): ?int
+    {
+        return $this->idTicketEstado;
+    }
+
+    public function getNombre(): ?string
+    {
+        return $this->nombre;
+    }
+
+    public function setNombre(string $nombre): self
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    public function getObs(): ?string
+    {
+        return $this->obs;
+    }
+
+    public function setObs(?string $obs): self
+    {
+        $this->obs = $obs;
+
+        return $this;
+    }
+
+    public function getEstado(): ?bool
+    {
+        return $this->estado;
+    }
+
+    public function setEstado(bool $estado): self
+    {
+        $this->estado = $estado;
+
+        return $this;
+    }
+
 
 }

@@ -174,5 +174,262 @@ class Pvs
      */
     private $idSucursal;
 
+    public function getIdPv(): ?int
+    {
+        return $this->idPv;
+    }
+
+    public function getNombre(): ?string
+    {
+        return $this->nombre;
+    }
+
+    public function setNombre(string $nombre): self
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    public function getObs(): ?string
+    {
+        return $this->obs;
+    }
+
+    public function setObs(?string $obs): self
+    {
+        $this->obs = $obs;
+
+        return $this;
+    }
+
+    public function getEstado(): ?int
+    {
+        return $this->estado;
+    }
+
+    public function setEstado(int $estado): self
+    {
+        $this->estado = $estado;
+
+        return $this;
+    }
+
+    public function getFecha(): ?\DateTimeInterface
+    {
+        return $this->fecha;
+    }
+
+    public function setFecha(?\DateTimeInterface $fecha): self
+    {
+        $this->fecha = $fecha;
+
+        return $this;
+    }
+
+    public function getTipo(): ?bool
+    {
+        return $this->tipo;
+    }
+
+    public function setTipo(bool $tipo): self
+    {
+        $this->tipo = $tipo;
+
+        return $this;
+    }
+
+    public function getCuentaIva(): ?bool
+    {
+        return $this->cuentaIva;
+    }
+
+    public function setCuentaIva(bool $cuentaIva): self
+    {
+        $this->cuentaIva = $cuentaIva;
+
+        return $this;
+    }
+
+    public function getCuentaIibb(): ?bool
+    {
+        return $this->cuentaIibb;
+    }
+
+    public function setCuentaIibb(bool $cuentaIibb): self
+    {
+        $this->cuentaIibb = $cuentaIibb;
+
+        return $this;
+    }
+
+    public function getPrefijo(): ?int
+    {
+        return $this->prefijo;
+    }
+
+    public function setPrefijo(int $prefijo): self
+    {
+        $this->prefijo = $prefijo;
+
+        return $this;
+    }
+
+    public function getNumero(): ?int
+    {
+        return $this->numero;
+    }
+
+    public function setNumero(int $numero): self
+    {
+        $this->numero = $numero;
+
+        return $this;
+    }
+
+    public function getEstacion(): ?string
+    {
+        return $this->estacion;
+    }
+
+    public function setEstacion(?string $estacion): self
+    {
+        $this->estacion = $estacion;
+
+        return $this;
+    }
+
+    public function getTipoFac(): ?string
+    {
+        return $this->tipoFac;
+    }
+
+    public function setTipoFac(string $tipoFac): self
+    {
+        $this->tipoFac = $tipoFac;
+
+        return $this;
+    }
+
+    public function getCarga(): ?bool
+    {
+        return $this->carga;
+    }
+
+    public function setCarga(bool $carga): self
+    {
+        $this->carga = $carga;
+
+        return $this;
+    }
+
+    public function getModelo(): ?int
+    {
+        return $this->modelo;
+    }
+
+    public function setModelo(int $modelo): self
+    {
+        $this->modelo = $modelo;
+
+        return $this;
+    }
+
+    public function getPuerto(): ?bool
+    {
+        return $this->puerto;
+    }
+
+    public function setPuerto(bool $puerto): self
+    {
+        $this->puerto = $puerto;
+
+        return $this;
+    }
+
+    public function getBps(): ?int
+    {
+        return $this->bps;
+    }
+
+    public function setBps(int $bps): self
+    {
+        $this->bps = $bps;
+
+        return $this;
+    }
+
+    public function getUltimoz(): ?string
+    {
+        return $this->ultimoz;
+    }
+
+    public function setUltimoz(?string $ultimoz): self
+    {
+        $this->ultimoz = $ultimoz;
+
+        return $this;
+    }
+
+    public function getDetalonario(): ?bool
+    {
+        return $this->detalonario;
+    }
+
+    public function setDetalonario(bool $detalonario): self
+    {
+        $this->detalonario = $detalonario;
+
+        return $this;
+    }
+
+    public function getVariante(): ?bool
+    {
+        return $this->variante;
+    }
+
+    public function setVariante(bool $variante): self
+    {
+        $this->variante = $variante;
+
+        return $this;
+    }
+
+    public function getLsa(): ?string
+    {
+        return $this->lsa;
+    }
+
+    public function setLsa(?string $lsa): self
+    {
+        $this->lsa = $lsa;
+
+        return $this;
+    }
+
+    public function getIdImpresora(): ?Impresoras
+    {
+        return $this->idImpresora;
+    }
+
+    public function setIdImpresora(?Impresoras $idImpresora): self
+    {
+        $this->idImpresora = $idImpresora;
+
+        return $this;
+    }
+
+    public function getIdSucursal(): ?Sucursales
+    {
+        return $this->idSucursal;
+    }
+
+    public function setIdSucursal(?Sucursales $idSucursal): self
+    {
+        $this->idSucursal = $idSucursal;
+
+        return $this;
+    }
+
 
 }

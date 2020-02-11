@@ -110,5 +110,142 @@ class Ctacte
      */
     private $idRecibo;
 
+    public function getIdMovim(): ?int
+    {
+        return $this->idMovim;
+    }
+
+    public function getAuto(): ?bool
+    {
+        return $this->auto;
+    }
+
+    public function setAuto(bool $auto): self
+    {
+        $this->auto = $auto;
+
+        return $this;
+    }
+
+    public function getConcepto(): ?string
+    {
+        return $this->concepto;
+    }
+
+    public function setConcepto(string $concepto): self
+    {
+        $this->concepto = $concepto;
+
+        return $this;
+    }
+
+    public function getFecha(): ?\DateTimeInterface
+    {
+        return $this->fecha;
+    }
+
+    public function setFecha(?\DateTimeInterface $fecha): self
+    {
+        $this->fecha = $fecha;
+
+        return $this;
+    }
+
+    public function getImporte(): ?string
+    {
+        return $this->importe;
+    }
+
+    public function setImporte(string $importe): self
+    {
+        $this->importe = $importe;
+
+        return $this;
+    }
+
+    public function getSaldo(): ?string
+    {
+        return $this->saldo;
+    }
+
+    public function setSaldo(string $saldo): self
+    {
+        $this->saldo = $saldo;
+
+        return $this;
+    }
+
+    public function getComprob(): ?string
+    {
+        return $this->comprob;
+    }
+
+    public function setComprob(?string $comprob): self
+    {
+        $this->comprob = $comprob;
+
+        return $this;
+    }
+
+    public function getObs(): ?string
+    {
+        return $this->obs;
+    }
+
+    public function setObs(?string $obs): self
+    {
+        $this->obs = $obs;
+
+        return $this;
+    }
+
+    public function getIdCliente(): ?Personas
+    {
+        return $this->idCliente;
+    }
+
+    public function setIdCliente(?Personas $idCliente): self
+    {
+        $this->idCliente = $idCliente;
+
+        return $this;
+    }
+
+    public function getIdComprob(): ?Comprob
+    {
+        return $this->idComprob;
+    }
+
+    public function setIdComprob(?Comprob $idComprob): self
+    {
+        $this->idComprob = $idComprob;
+
+        return $this;
+    }
+
+    public function getIdConcepto(): ?Conceptos
+    {
+        return $this->idConcepto;
+    }
+
+    public function setIdConcepto(?Conceptos $idConcepto): self
+    {
+        $this->idConcepto = $idConcepto;
+
+        return $this;
+    }
+
+    public function getIdRecibo(): ?Recibos
+    {
+        return $this->idRecibo;
+    }
+
+    public function setIdRecibo(?Recibos $idRecibo): self
+    {
+        $this->idRecibo = $idRecibo;
+
+        return $this;
+    }
+
 
 }

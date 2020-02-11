@@ -28,5 +28,22 @@ class RecibosImagenes
      */
     private $imagen;
 
+    public function getIdRecibo(): ?int
+    {
+        return $this->idRecibo;
+    }
+
+    public function getImagen()
+    {
+        return $this->imagen;
+    }
+
+    public function setImagen($imagen): self
+    {
+        $this->imagen = $imagen;
+
+        return $this;
+    }
+
 
 }

@@ -31,5 +31,29 @@ class PersonasImagenes
      */
     private $idPersona;
 
+    public function getImagen()
+    {
+        return $this->imagen;
+    }
+
+    public function setImagen($imagen): self
+    {
+        $this->imagen = $imagen;
+
+        return $this;
+    }
+
+    public function getIdPersona(): ?Personas
+    {
+        return $this->idPersona;
+    }
+
+    public function setIdPersona(?Personas $idPersona): self
+    {
+        $this->idPersona = $idPersona;
+
+        return $this;
+    }
+
 
 }

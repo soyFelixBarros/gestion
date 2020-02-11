@@ -77,5 +77,106 @@ class SysProgramador
      */
     private $componente;
 
+    public function getIdEvento(): ?int
+    {
+        return $this->idEvento;
+    }
+
+    public function getCreaEstacion(): ?string
+    {
+        return $this->creaEstacion;
+    }
+
+    public function setCreaEstacion(string $creaEstacion): self
+    {
+        $this->creaEstacion = $creaEstacion;
+
+        return $this;
+    }
+
+    public function getCreaUsuario(): ?string
+    {
+        return $this->creaUsuario;
+    }
+
+    public function setCreaUsuario(string $creaUsuario): self
+    {
+        $this->creaUsuario = $creaUsuario;
+
+        return $this;
+    }
+
+    public function getEstacion(): ?string
+    {
+        return $this->estacion;
+    }
+
+    public function setEstacion(string $estacion): self
+    {
+        $this->estacion = $estacion;
+
+        return $this;
+    }
+
+    public function getComando(): ?string
+    {
+        return $this->comando;
+    }
+
+    public function setComando(string $comando): self
+    {
+        $this->comando = $comando;
+
+        return $this;
+    }
+
+    public function getEstado(): ?bool
+    {
+        return $this->estado;
+    }
+
+    public function setEstado(bool $estado): self
+    {
+        $this->estado = $estado;
+
+        return $this;
+    }
+
+    public function getFecha(): ?\DateTimeInterface
+    {
+        return $this->fecha;
+    }
+
+    public function setFecha(?\DateTimeInterface $fecha): self
+    {
+        $this->fecha = $fecha;
+
+        return $this;
+    }
+
+    public function getFechaejecutar(): ?\DateTimeInterface
+    {
+        return $this->fechaejecutar;
+    }
+
+    public function setFechaejecutar(?\DateTimeInterface $fechaejecutar): self
+    {
+        $this->fechaejecutar = $fechaejecutar;
+
+        return $this;
+    }
+
+    public function getComponente(): ?string
+    {
+        return $this->componente;
+    }
+
+    public function setComponente(?string $componente): self
+    {
+        $this->componente = $componente;
+
+        return $this;
+    }
+
 
 }

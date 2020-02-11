@@ -96,5 +96,118 @@ class ArticulosMovim
      */
     private $idComprob;
 
+    public function getIdMovim(): ?int
+    {
+        return $this->idMovim;
+    }
+
+    public function getFecha(): ?\DateTimeInterface
+    {
+        return $this->fecha;
+    }
+
+    public function setFecha(?\DateTimeInterface $fecha): self
+    {
+        $this->fecha = $fecha;
+
+        return $this;
+    }
+
+    public function getCantidad(): ?string
+    {
+        return $this->cantidad;
+    }
+
+    public function setCantidad(string $cantidad): self
+    {
+        $this->cantidad = $cantidad;
+
+        return $this;
+    }
+
+    public function getSaldo(): ?string
+    {
+        return $this->saldo;
+    }
+
+    public function setSaldo(string $saldo): self
+    {
+        $this->saldo = $saldo;
+
+        return $this;
+    }
+
+    public function getSeries(): ?string
+    {
+        return $this->series;
+    }
+
+    public function setSeries(?string $series): self
+    {
+        $this->series = $series;
+
+        return $this;
+    }
+
+    public function getObs(): ?string
+    {
+        return $this->obs;
+    }
+
+    public function setObs(?string $obs): self
+    {
+        $this->obs = $obs;
+
+        return $this;
+    }
+
+    public function getDesdesituacion(): ?ArticulosSituaciones
+    {
+        return $this->desdesituacion;
+    }
+
+    public function setDesdesituacion(?ArticulosSituaciones $desdesituacion): self
+    {
+        $this->desdesituacion = $desdesituacion;
+
+        return $this;
+    }
+
+    public function getHaciasituacion(): ?ArticulosSituaciones
+    {
+        return $this->haciasituacion;
+    }
+
+    public function setHaciasituacion(?ArticulosSituaciones $haciasituacion): self
+    {
+        $this->haciasituacion = $haciasituacion;
+
+        return $this;
+    }
+
+    public function getIdArticulo(): ?Articulos
+    {
+        return $this->idArticulo;
+    }
+
+    public function setIdArticulo(?Articulos $idArticulo): self
+    {
+        $this->idArticulo = $idArticulo;
+
+        return $this;
+    }
+
+    public function getIdComprob(): ?Comprob
+    {
+        return $this->idComprob;
+    }
+
+    public function setIdComprob(?Comprob $idComprob): self
+    {
+        $this->idComprob = $idComprob;
+
+        return $this;
+    }
+
 
 }

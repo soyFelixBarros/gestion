@@ -114,5 +114,154 @@ class SysMensajes
      */
     private $idRemitente;
 
+    public function getIdMensaje(): ?int
+    {
+        return $this->idMensaje;
+    }
+
+    public function getFecha(): ?\DateTimeInterface
+    {
+        return $this->fecha;
+    }
+
+    public function setFecha(\DateTimeInterface $fecha): self
+    {
+        $this->fecha = $fecha;
+
+        return $this;
+    }
+
+    public function getFechaRecibo(): ?\DateTimeInterface
+    {
+        return $this->fechaRecibo;
+    }
+
+    public function setFechaRecibo(?\DateTimeInterface $fechaRecibo): self
+    {
+        $this->fechaRecibo = $fechaRecibo;
+
+        return $this;
+    }
+
+    public function getDestino(): ?string
+    {
+        return $this->destino;
+    }
+
+    public function setDestino(string $destino): self
+    {
+        $this->destino = $destino;
+
+        return $this;
+    }
+
+    public function getNombre(): ?string
+    {
+        return $this->nombre;
+    }
+
+    public function setNombre(string $nombre): self
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    public function getObs(): ?string
+    {
+        return $this->obs;
+    }
+
+    public function setObs(?string $obs): self
+    {
+        $this->obs = $obs;
+
+        return $this;
+    }
+
+    public function getEstado(): ?bool
+    {
+        return $this->estado;
+    }
+
+    public function setEstado(bool $estado): self
+    {
+        $this->estado = $estado;
+
+        return $this;
+    }
+
+    public function getFlags(): ?bool
+    {
+        return $this->flags;
+    }
+
+    public function setFlags(bool $flags): self
+    {
+        $this->flags = $flags;
+
+        return $this;
+    }
+
+    public function getEstacionEnvia(): ?string
+    {
+        return $this->estacionEnvia;
+    }
+
+    public function setEstacionEnvia(string $estacionEnvia): self
+    {
+        $this->estacionEnvia = $estacionEnvia;
+
+        return $this;
+    }
+
+    public function getEstacionRecibe(): ?string
+    {
+        return $this->estacionRecibe;
+    }
+
+    public function setEstacionRecibe(string $estacionRecibe): self
+    {
+        $this->estacionRecibe = $estacionRecibe;
+
+        return $this;
+    }
+
+    public function getIdDestinatario(): ?Personas
+    {
+        return $this->idDestinatario;
+    }
+
+    public function setIdDestinatario(?Personas $idDestinatario): self
+    {
+        $this->idDestinatario = $idDestinatario;
+
+        return $this;
+    }
+
+    public function getIdGrupo(): ?PersonasGrupos
+    {
+        return $this->idGrupo;
+    }
+
+    public function setIdGrupo(?PersonasGrupos $idGrupo): self
+    {
+        $this->idGrupo = $idGrupo;
+
+        return $this;
+    }
+
+    public function getIdRemitente(): ?Personas
+    {
+        return $this->idRemitente;
+    }
+
+    public function setIdRemitente(?Personas $idRemitente): self
+    {
+        $this->idRemitente = $idRemitente;
+
+        return $this;
+    }
+
 
 }

@@ -60,5 +60,56 @@ class SysConfig
      */
     private $fecha;
 
+    public function getEstacion(): ?string
+    {
+        return $this->estacion;
+    }
+
+    public function getIdSucursal(): ?int
+    {
+        return $this->idSucursal;
+    }
+
+    public function getNombre(): ?string
+    {
+        return $this->nombre;
+    }
+
+    public function getGrupo(): ?string
+    {
+        return $this->grupo;
+    }
+
+    public function setGrupo(string $grupo): self
+    {
+        $this->grupo = $grupo;
+
+        return $this;
+    }
+
+    public function getValor(): ?string
+    {
+        return $this->valor;
+    }
+
+    public function setValor(string $valor): self
+    {
+        $this->valor = $valor;
+
+        return $this;
+    }
+
+    public function getFecha(): ?\DateTimeInterface
+    {
+        return $this->fecha;
+    }
+
+    public function setFecha(?\DateTimeInterface $fecha): self
+    {
+        $this->fecha = $fecha;
+
+        return $this;
+    }
+
 
 }

@@ -133,5 +133,202 @@ class SysPlantillas
      */
     private $defxml;
 
+    public function getIdPlantilla(): ?int
+    {
+        return $this->idPlantilla;
+    }
+
+    public function getNombre(): ?string
+    {
+        return $this->nombre;
+    }
+
+    public function setNombre(string $nombre): self
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    public function getTipo(): ?bool
+    {
+        return $this->tipo;
+    }
+
+    public function setTipo(bool $tipo): self
+    {
+        $this->tipo = $tipo;
+
+        return $this;
+    }
+
+    public function getObs(): ?string
+    {
+        return $this->obs;
+    }
+
+    public function setObs(?string $obs): self
+    {
+        $this->obs = $obs;
+
+        return $this;
+    }
+
+    public function getEstado(): ?int
+    {
+        return $this->estado;
+    }
+
+    public function setEstado(int $estado): self
+    {
+        $this->estado = $estado;
+
+        return $this;
+    }
+
+    public function getFecha(): ?\DateTimeInterface
+    {
+        return $this->fecha;
+    }
+
+    public function setFecha(?\DateTimeInterface $fecha): self
+    {
+        $this->fecha = $fecha;
+
+        return $this;
+    }
+
+    public function getCodigo(): ?string
+    {
+        return $this->codigo;
+    }
+
+    public function setCodigo(string $codigo): self
+    {
+        $this->codigo = $codigo;
+
+        return $this;
+    }
+
+    public function getTamanopapel(): ?string
+    {
+        return $this->tamanopapel;
+    }
+
+    public function setTamanopapel(string $tamanopapel): self
+    {
+        $this->tamanopapel = $tamanopapel;
+
+        return $this;
+    }
+
+    public function getLandscape(): ?bool
+    {
+        return $this->landscape;
+    }
+
+    public function setLandscape(bool $landscape): self
+    {
+        $this->landscape = $landscape;
+
+        return $this;
+    }
+
+    public function getCopias(): ?bool
+    {
+        return $this->copias;
+    }
+
+    public function setCopias(bool $copias): self
+    {
+        $this->copias = $copias;
+
+        return $this;
+    }
+
+    public function getBandeja(): ?bool
+    {
+        return $this->bandeja;
+    }
+
+    public function setBandeja(?bool $bandeja): self
+    {
+        $this->bandeja = $bandeja;
+
+        return $this;
+    }
+
+    public function getMargenIzquierda(): ?int
+    {
+        return $this->margenIzquierda;
+    }
+
+    public function setMargenIzquierda(int $margenIzquierda): self
+    {
+        $this->margenIzquierda = $margenIzquierda;
+
+        return $this;
+    }
+
+    public function getMargenDerecha(): ?int
+    {
+        return $this->margenDerecha;
+    }
+
+    public function setMargenDerecha(int $margenDerecha): self
+    {
+        $this->margenDerecha = $margenDerecha;
+
+        return $this;
+    }
+
+    public function getMargenArriba(): ?int
+    {
+        return $this->margenArriba;
+    }
+
+    public function setMargenArriba(int $margenArriba): self
+    {
+        $this->margenArriba = $margenArriba;
+
+        return $this;
+    }
+
+    public function getMargenAbajo(): ?int
+    {
+        return $this->margenAbajo;
+    }
+
+    public function setMargenAbajo(int $margenAbajo): self
+    {
+        $this->margenAbajo = $margenAbajo;
+
+        return $this;
+    }
+
+    public function getDef()
+    {
+        return $this->def;
+    }
+
+    public function setDef($def): self
+    {
+        $this->def = $def;
+
+        return $this;
+    }
+
+    public function getDefxml(): ?string
+    {
+        return $this->defxml;
+    }
+
+    public function setDefxml(?string $defxml): self
+    {
+        $this->defxml = $defxml;
+
+        return $this;
+    }
+
 
 }

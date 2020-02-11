@@ -135,5 +135,190 @@ class ComprobDetalle
      */
     private $idComprob;
 
+    public function getIdComprobDetalle(): ?int
+    {
+        return $this->idComprobDetalle;
+    }
+
+    public function getOrden(): ?bool
+    {
+        return $this->orden;
+    }
+
+    public function setOrden(bool $orden): self
+    {
+        $this->orden = $orden;
+
+        return $this;
+    }
+
+    public function getNombre(): ?string
+    {
+        return $this->nombre;
+    }
+
+    public function setNombre(string $nombre): self
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    public function getDescripcion(): ?string
+    {
+        return $this->descripcion;
+    }
+
+    public function setDescripcion(?string $descripcion): self
+    {
+        $this->descripcion = $descripcion;
+
+        return $this;
+    }
+
+    public function getCantidad(): ?string
+    {
+        return $this->cantidad;
+    }
+
+    public function setCantidad(string $cantidad): self
+    {
+        $this->cantidad = $cantidad;
+
+        return $this;
+    }
+
+    public function getCosto(): ?string
+    {
+        return $this->costo;
+    }
+
+    public function setCosto(string $costo): self
+    {
+        $this->costo = $costo;
+
+        return $this;
+    }
+
+    public function getPrecio(): ?string
+    {
+        return $this->precio;
+    }
+
+    public function setPrecio(string $precio): self
+    {
+        $this->precio = $precio;
+
+        return $this;
+    }
+
+    public function getIva(): ?string
+    {
+        return $this->iva;
+    }
+
+    public function setIva(string $iva): self
+    {
+        $this->iva = $iva;
+
+        return $this;
+    }
+
+    public function getImporte(): ?string
+    {
+        return $this->importe;
+    }
+
+    public function setImporte(string $importe): self
+    {
+        $this->importe = $importe;
+
+        return $this;
+    }
+
+    public function getTotal(): ?string
+    {
+        return $this->total;
+    }
+
+    public function setTotal(string $total): self
+    {
+        $this->total = $total;
+
+        return $this;
+    }
+
+    public function getRecargo(): ?string
+    {
+        return $this->recargo;
+    }
+
+    public function setRecargo(string $recargo): self
+    {
+        $this->recargo = $recargo;
+
+        return $this;
+    }
+
+    public function getSeries(): ?string
+    {
+        return $this->series;
+    }
+
+    public function setSeries(?string $series): self
+    {
+        $this->series = $series;
+
+        return $this;
+    }
+
+    public function getObs(): ?string
+    {
+        return $this->obs;
+    }
+
+    public function setObs(?string $obs): self
+    {
+        $this->obs = $obs;
+
+        return $this;
+    }
+
+    public function getIdAlicuota(): ?Alicuotas
+    {
+        return $this->idAlicuota;
+    }
+
+    public function setIdAlicuota(?Alicuotas $idAlicuota): self
+    {
+        $this->idAlicuota = $idAlicuota;
+
+        return $this;
+    }
+
+    public function getIdArticulo(): ?Articulos
+    {
+        return $this->idArticulo;
+    }
+
+    public function setIdArticulo(?Articulos $idArticulo): self
+    {
+        $this->idArticulo = $idArticulo;
+
+        return $this;
+    }
+
+    public function getIdComprob(): ?Comprob
+    {
+        return $this->idComprob;
+    }
+
+    public function setIdComprob(?Comprob $idComprob): self
+    {
+        $this->idComprob = $idComprob;
+
+        return $this;
+    }
+
 
 }

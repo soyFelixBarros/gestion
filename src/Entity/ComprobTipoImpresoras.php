@@ -82,5 +82,94 @@ class ComprobTipoImpresoras
      */
     private $idTipo;
 
+    public function getIdTipoImpresora(): ?int
+    {
+        return $this->idTipoImpresora;
+    }
+
+    public function getNombre(): ?string
+    {
+        return $this->nombre;
+    }
+
+    public function setNombre(?string $nombre): self
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    public function getEstacion(): ?string
+    {
+        return $this->estacion;
+    }
+
+    public function setEstacion(?string $estacion): self
+    {
+        $this->estacion = $estacion;
+
+        return $this;
+    }
+
+    public function getFecha(): ?\DateTimeInterface
+    {
+        return $this->fecha;
+    }
+
+    public function setFecha(?\DateTimeInterface $fecha): self
+    {
+        $this->fecha = $fecha;
+
+        return $this;
+    }
+
+    public function getIdImpresora(): ?Impresoras
+    {
+        return $this->idImpresora;
+    }
+
+    public function setIdImpresora(?Impresoras $idImpresora): self
+    {
+        $this->idImpresora = $idImpresora;
+
+        return $this;
+    }
+
+    public function getIdPv(): ?Pvs
+    {
+        return $this->idPv;
+    }
+
+    public function setIdPv(?Pvs $idPv): self
+    {
+        $this->idPv = $idPv;
+
+        return $this;
+    }
+
+    public function getIdSucursal(): ?Sucursales
+    {
+        return $this->idSucursal;
+    }
+
+    public function setIdSucursal(?Sucursales $idSucursal): self
+    {
+        $this->idSucursal = $idSucursal;
+
+        return $this;
+    }
+
+    public function getIdTipo(): ?DocumentosTipos
+    {
+        return $this->idTipo;
+    }
+
+    public function setIdTipo(?DocumentosTipos $idTipo): self
+    {
+        $this->idTipo = $idTipo;
+
+        return $this;
+    }
+
 
 }

@@ -189,5 +189,262 @@ class BancosCheques
      */
     private $idSucursal;
 
+    public function getIdCheque(): ?int
+    {
+        return $this->idCheque;
+    }
+
+    public function getNombre(): ?string
+    {
+        return $this->nombre;
+    }
+
+    public function setNombre(string $nombre): self
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    public function getConcepto(): ?string
+    {
+        return $this->concepto;
+    }
+
+    public function setConcepto(string $concepto): self
+    {
+        $this->concepto = $concepto;
+
+        return $this;
+    }
+
+    public function getObs(): ?string
+    {
+        return $this->obs;
+    }
+
+    public function setObs(?string $obs): self
+    {
+        $this->obs = $obs;
+
+        return $this;
+    }
+
+    public function getEstado(): ?int
+    {
+        return $this->estado;
+    }
+
+    public function setEstado(int $estado): self
+    {
+        $this->estado = $estado;
+
+        return $this;
+    }
+
+    public function getFecha(): ?\DateTimeInterface
+    {
+        return $this->fecha;
+    }
+
+    public function setFecha(?\DateTimeInterface $fecha): self
+    {
+        $this->fecha = $fecha;
+
+        return $this;
+    }
+
+    public function getIdBanco(): ?int
+    {
+        return $this->idBanco;
+    }
+
+    public function setIdBanco(?int $idBanco): self
+    {
+        $this->idBanco = $idBanco;
+
+        return $this;
+    }
+
+    public function getPrefijo(): ?int
+    {
+        return $this->prefijo;
+    }
+
+    public function setPrefijo(int $prefijo): self
+    {
+        $this->prefijo = $prefijo;
+
+        return $this;
+    }
+
+    public function getNumero(): ?int
+    {
+        return $this->numero;
+    }
+
+    public function setNumero(int $numero): self
+    {
+        $this->numero = $numero;
+
+        return $this;
+    }
+
+    public function getIdReciboPago(): ?int
+    {
+        return $this->idReciboPago;
+    }
+
+    public function setIdReciboPago(?int $idReciboPago): self
+    {
+        $this->idReciboPago = $idReciboPago;
+
+        return $this;
+    }
+
+    public function getEmitido(): ?bool
+    {
+        return $this->emitido;
+    }
+
+    public function setEmitido(bool $emitido): self
+    {
+        $this->emitido = $emitido;
+
+        return $this;
+    }
+
+    public function getImporte(): ?string
+    {
+        return $this->importe;
+    }
+
+    public function setImporte(string $importe): self
+    {
+        $this->importe = $importe;
+
+        return $this;
+    }
+
+    public function getFechaemision(): ?\DateTimeInterface
+    {
+        return $this->fechaemision;
+    }
+
+    public function setFechaemision(\DateTimeInterface $fechaemision): self
+    {
+        $this->fechaemision = $fechaemision;
+
+        return $this;
+    }
+
+    public function getEmitidopor(): ?string
+    {
+        return $this->emitidopor;
+    }
+
+    public function setEmitidopor(?string $emitidopor): self
+    {
+        $this->emitidopor = $emitidopor;
+
+        return $this;
+    }
+
+    public function getFechacobro(): ?\DateTimeInterface
+    {
+        return $this->fechacobro;
+    }
+
+    public function setFechacobro(\DateTimeInterface $fechacobro): self
+    {
+        $this->fechacobro = $fechacobro;
+
+        return $this;
+    }
+
+    public function getIdCaja(): ?Cajas
+    {
+        return $this->idCaja;
+    }
+
+    public function setIdCaja(?Cajas $idCaja): self
+    {
+        $this->idCaja = $idCaja;
+
+        return $this;
+    }
+
+    public function getIdChequera(): ?Chequeras
+    {
+        return $this->idChequera;
+    }
+
+    public function setIdChequera(?Chequeras $idChequera): self
+    {
+        $this->idChequera = $idChequera;
+
+        return $this;
+    }
+
+    public function getIdCliente(): ?Personas
+    {
+        return $this->idCliente;
+    }
+
+    public function setIdCliente(?Personas $idCliente): self
+    {
+        $this->idCliente = $idCliente;
+
+        return $this;
+    }
+
+    public function getIdComprob(): ?Comprob
+    {
+        return $this->idComprob;
+    }
+
+    public function setIdComprob(?Comprob $idComprob): self
+    {
+        $this->idComprob = $idComprob;
+
+        return $this;
+    }
+
+    public function getIdConcepto(): ?Conceptos
+    {
+        return $this->idConcepto;
+    }
+
+    public function setIdConcepto(?Conceptos $idConcepto): self
+    {
+        $this->idConcepto = $idConcepto;
+
+        return $this;
+    }
+
+    public function getIdRecibo(): ?Recibos
+    {
+        return $this->idRecibo;
+    }
+
+    public function setIdRecibo(?Recibos $idRecibo): self
+    {
+        $this->idRecibo = $idRecibo;
+
+        return $this;
+    }
+
+    public function getIdSucursal(): ?Sucursales
+    {
+        return $this->idSucursal;
+    }
+
+    public function setIdSucursal(?Sucursales $idSucursal): self
+    {
+        $this->idSucursal = $idSucursal;
+
+        return $this;
+    }
+
 
 }

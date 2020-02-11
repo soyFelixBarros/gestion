@@ -110,5 +110,142 @@ class Paises
      */
     private $idMoneda;
 
+    public function getIdPais(): ?int
+    {
+        return $this->idPais;
+    }
+
+    public function getNombre(): ?string
+    {
+        return $this->nombre;
+    }
+
+    public function setNombre(string $nombre): self
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    public function getObs(): ?string
+    {
+        return $this->obs;
+    }
+
+    public function setObs(?string $obs): self
+    {
+        $this->obs = $obs;
+
+        return $this;
+    }
+
+    public function getEstado(): ?int
+    {
+        return $this->estado;
+    }
+
+    public function setEstado(int $estado): self
+    {
+        $this->estado = $estado;
+
+        return $this;
+    }
+
+    public function getFecha(): ?\DateTimeInterface
+    {
+        return $this->fecha;
+    }
+
+    public function setFecha(?\DateTimeInterface $fecha): self
+    {
+        $this->fecha = $fecha;
+
+        return $this;
+    }
+
+    public function getIso(): ?string
+    {
+        return $this->iso;
+    }
+
+    public function setIso(string $iso): self
+    {
+        $this->iso = $iso;
+
+        return $this;
+    }
+
+    public function getIva1(): ?string
+    {
+        return $this->iva1;
+    }
+
+    public function setIva1(string $iva1): self
+    {
+        $this->iva1 = $iva1;
+
+        return $this;
+    }
+
+    public function getIva2(): ?string
+    {
+        return $this->iva2;
+    }
+
+    public function setIva2(string $iva2): self
+    {
+        $this->iva2 = $iva2;
+
+        return $this;
+    }
+
+    public function getClaveban(): ?TipoDoc
+    {
+        return $this->claveban;
+    }
+
+    public function setClaveban(?TipoDoc $claveban): self
+    {
+        $this->claveban = $claveban;
+
+        return $this;
+    }
+
+    public function getClavefis(): ?TipoDoc
+    {
+        return $this->clavefis;
+    }
+
+    public function setClavefis(?TipoDoc $clavefis): self
+    {
+        $this->clavefis = $clavefis;
+
+        return $this;
+    }
+
+    public function getClavejur(): ?TipoDoc
+    {
+        return $this->clavejur;
+    }
+
+    public function setClavejur(?TipoDoc $clavejur): self
+    {
+        $this->clavejur = $clavejur;
+
+        return $this;
+    }
+
+    public function getIdMoneda(): ?Monedas
+    {
+        return $this->idMoneda;
+    }
+
+    public function setIdMoneda(?Monedas $idMoneda): self
+    {
+        $this->idMoneda = $idMoneda;
+
+        return $this;
+    }
+
 
 }
