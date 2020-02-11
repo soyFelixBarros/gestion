@@ -1,4 +1,5 @@
 easy_admin:
-   entities:
-      Articulos:
-        class: App\Entity\Articulos
+  site_name: 'Sistema de gestión'
+  entities:
+    Articulos:
+      class: App\Entity\Articulos
