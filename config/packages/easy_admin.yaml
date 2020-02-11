@@ -3,3 +3,42 @@ easy_admin:
   entities:
     Articulos:
       class: App\Entity\Articulos
+      label: 'Artículos'
+      form:
+        title: 'Agregar/editar %%entity_label%%'
+        fields:
+          - { type: 'group' }
+          - { property: 'codigo1', columns: 3, label: 'Código 1', type_options: { required: false } }
+          - { property: 'codigo2', columns: 3, label: 'Código 2', type_options: { required: false } }
+          - { property: 'codigo3', columns: 3, label: 'Código 3', type_options: { required: false } }
+          - { property: 'codigo4', columns: 3, label: 'Código 4', type_options: { required: false } }
+          - { type: 'group' }
+          - { property: 'idCategoria', columns: 6, label: 'Categoría', type_options: { required: false } }
+          - { property: 'idMarca', columns: 6, label: 'Marca', type_options: { required: false } }
+          - { property: 'modelo', columns: 6, label: 'Modelo', type_options: { required: false } }
+          - { property: 'serie', columns: 6, label: 'Serie', type_options: { required: false } }
+          - { type: 'group' }
+          - { property: 'nombre', label: 'Nombre', type_options: { required: true } }
+          - { property: 'url', label: 'URL', type_options: { required: false } }
+          - { property: 'descripcion', columns: 4, label: 'Descripción', type_options: { required: false } }
+          - { property: 'descripcion2', columns: 8, label: 'Descripción larga', type_options: { required: false } }
+          - { property: 'destacado', columns: 4, label: 'Destacado', type_options: { required: false } }
+          - { property: 'web', columns: 4, label: 'Publicar', type_options: { required: false } }
+          - { property: 'garantia', columns: 4, label: 'Garantía', type_options: { required: false } }
+          - { property: 'idProveedor', label: 'Proveedor', type_options: { required: false } }
+          - { property: 'fechaCreado', format: 'd/m/Y H:i:s' }
+          - { property: 'fechaPrecio', format: 'd/m/Y H:i:s' }
+      search:
+        fields: ['idArticulo', 'nombre']
+      list:
+        title: "%%entity_label%% más recientes"
+        fields:
+          - { property: 'idArticulo', label: 'Cód.' }
+          - { property: 'nombre', label: 'Nombre' }
+          - { property: 'costo', label: 'Costo' }
+          - { property: 'pvp', label: 'PVP' }
+          - { property: 'stockActual', label: 'Stock Act' }
+          - { property: 'stockMinimo', label: 'Stock Mín' }
+          - { property: 'pedido', label: 'Pedidos' }
+          - { property: 'apedir', label: 'A Pedir' }
+          - { property: 'codigo1', label: 'Código 1' }
