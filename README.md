@@ -1,19 +1,19 @@
 ### Instalación
 
-1 paso: Clonar el repositorio
+Paso 1: Clonar el repositorio
 
 ```bash
 git clone https://github.com/soyFelixBarros/gestion.git
 cd gestion
 ```
 
-2 paso: Ejecutar docker compose
+Paso 2: Ejecutar docker compose
 
 ```bash
 docker-compose up -d
 ```
 
-3 paso: Ingresar dentro del contenedor de php para instalar las dependencias
+Paso 3: Ingresar dentro del contenedor de php para instalar las dependencias
 
 ```bash
 docker exec -it gestion-php-fpm bash
@@ -35,4 +35,11 @@ Para configurar la conexión a la base de datos de nuestro proyecto, tenemos que
 
 ```yml
 DATABASE_URL=mysql://demo:demo@mariadb/gestion
+```
+
+Para crear las tablas en la base de datos, tenemos que ingresar a nuestro contendor y ejecutar *doctrine:schema:update*:
+
+```sh
+docker exec -it gestion-php-fpm bash
+php bin/console doctrine:schema:update --force
 ```
