@@ -1,0 +1,10 @@
+easy_admin:
+    entities:
+        ArticulosRubros:
+            class: App\Entity\ArticulosRubros
+            label: 'Rubros'
+            list:
+                title: "Listado de %%entity_label%%"
+                fields:
+                  - { property: 'nombre', label: 'Nombre' }
+                  - { property: 'idAlicuota', label: 'Alícuota' }

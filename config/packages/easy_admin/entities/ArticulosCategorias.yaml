@@ -1,0 +1,11 @@
+easy_admin:
+    entities:
+        ArticulosCategorias:
+            class: App\Entity\ArticulosCategorias
+            label: 'Categorías'
+            list:
+                title: "Listado de %%entity_label%% de Artículos"
+                fields:
+                  - { property: 'nombre', label: 'Nombre' }
+                  - { property: 'stockMinimo', label: 'Stock Mín' }
+                  - { property: 'cacheStockActual', label: 'Stock Act' }

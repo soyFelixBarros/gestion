@@ -1,0 +1,10 @@
+easy_admin:
+    entities:
+        Personas:
+            class: App\Entity\Personas
+            label: 'Personas'
+            list:
+                title: 'Listado de %%entity_label%%'
+                fields:
+                  - { property: 'nombre', label: 'Nombre' }
+                  - { property: 'telefono', label: 'Teléfono' }

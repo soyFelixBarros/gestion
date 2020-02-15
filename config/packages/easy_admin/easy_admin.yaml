@@ -1,0 +1,20 @@
+easy_admin:
+    site_name: 'Sistema de gestión'
+    design:
+        menu:
+            - label: 'Artículos'
+            - { entity: 'Articulos', label: 'Listado', icon: 'clipboard-list' }
+
+            - label: 'Personas'
+            - { entity: 'Personas', label: 'Listado' }
+
+            - label: 'Comprobantes'
+            - { entity: 'Recibos', label: 'Recibos' }
+
+            - label: 'Varios'
+            - { entity: 'ArticulosRubros', label: 'Rubros' }
+            - { entity: 'ArticulosCategorias', label: 'Categorías' }
+            - { entity: 'Marcas', label: 'Marcas' }
+            - { entity: 'Alicuotas', label: 'Alícuotas' }
+            - { entity: 'Margenes', label: 'Márgenes' }
+  

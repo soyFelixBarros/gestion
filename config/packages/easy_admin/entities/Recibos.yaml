@@ -1,0 +1,14 @@
+easy_admin:
+    entities:
+        Recibos:
+            class: App\Entity\Recibos
+            label: 'Recibos'
+            list:
+                title: 'Listado de %%entity_label%% de cobros'
+                fields:
+                    - { property: 'numero', label: 'Número' }
+                    - { property: 'fecha', label: 'Fecha' }
+                    - { property: 'total', label: 'Importe' }
+                    - { property: 'idCliente', label: 'Cliente' }
+                    - { property: 'idConcepto', label: 'Concepto' }
+                    - { property: 'obs', label: 'Obs.' }

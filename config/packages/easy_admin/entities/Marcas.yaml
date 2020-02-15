@@ -1,0 +1,10 @@
+easy_admin:
+    entities:
+        Marcas:
+            class: App\Entity\Marcas
+            label: 'Marcas'
+            list:
+                title: "Listado de %%entity_label%%"
+                fields:
+                  - { property: 'nombre', label: 'Nombre' }
+                  - { property: 'web', label: 'Web' }

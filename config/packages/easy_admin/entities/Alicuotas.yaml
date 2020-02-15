@@ -1,0 +1,11 @@
+easy_admin:
+    entities:
+        Alicuotas:
+            class: App\Entity\Alicuotas
+            label: 'Alícuotas'
+            list:
+                title: "Listado de %%entity_label%%"
+                fields:
+                  - { property: 'nombre', label: 'Nombre' }
+                  - { property: 'porcentaje', label: 'Procentaje' }
+                  - { property: 'importeMinimo', label: 'Imp. Mín.' }

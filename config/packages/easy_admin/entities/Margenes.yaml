@@ -1,0 +1,11 @@
+easy_admin:
+    entities:
+        Margenes:
+            class: App\Entity\Margenes
+            label: 'Márgenes'
+            list:
+                title: "Listado de %%entity_label%%"
+                fields:
+                  - { property: 'nombre', label: 'Nombre' }
+                  - { property: 'porcentaje', label: 'Porcentaje' }
+                  - { property: 'predet', label: 'Predeterminado' }
