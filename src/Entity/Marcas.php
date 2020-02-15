@@ -66,6 +66,11 @@ class Marcas
      */
     private $idProveedor;
 
+    public function __toString()
+    {
+        return $this->getNombre();
+    }
+
     public function getIdMarca(): ?int
     {
         return $this->idMarca;

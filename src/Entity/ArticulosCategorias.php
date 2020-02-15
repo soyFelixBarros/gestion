@@ -125,6 +125,11 @@ class ArticulosCategorias
      */
     private $idRubro;
 
+    public function __toString()
+    {
+        return $this->getNombre();
+    }
+
     public function getIdCategoria(): ?int
     {
         return $this->idCategoria;

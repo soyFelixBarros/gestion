@@ -26,30 +26,9 @@ class Articulos
     /**
      * @var string|null
      *
-     * @ORM\Column(name="codigo1", type="string", length=50, nullable=true)
+     * @ORM\Column(name="codigo", type="string", length=50, nullable=true)
      */
-    private $codigo1;
-
-    /**
-     * @var string|null
-     *
-     * @ORM\Column(name="codigo2", type="string", length=50, nullable=true)
-     */
-    private $codigo2;
-
-    /**
-     * @var string|null
-     *
-     * @ORM\Column(name="codigo3", type="string", length=50, nullable=true)
-     */
-    private $codigo3;
-
-    /**
-     * @var string|null
-     *
-     * @ORM\Column(name="codigo4", type="string", length=50, nullable=true)
-     */
-    private $codigo4;
+    private $codigo;
 
     /**
      * @var string|null
@@ -75,23 +54,9 @@ class Articulos
     /**
      * @var string|null
      *
-     * @ORM\Column(name="url", type="string", length=200, nullable=true)
-     */
-    private $url;
-
-    /**
-     * @var string|null
-     *
      * @ORM\Column(name="descripcion", type="text", length=65535, nullable=true)
      */
     private $descripcion;
-
-    /**
-     * @var string|null
-     *
-     * @ORM\Column(name="descripcion2", type="text", length=65535, nullable=true)
-     */
-    private $descripcion2;
 
     /**
      * @var bool
@@ -171,20 +136,6 @@ class Articulos
     private $obs;
 
     /**
-     * @var bool
-     *
-     * @ORM\Column(name="estado", type="boolean", nullable=false)
-     */
-    private $estado = '0';
-
-    /**
-     * @var bool
-     *
-     * @ORM\Column(name="destacado", type="boolean", nullable=false)
-     */
-    private $destacado = '0';
-
-    /**
      * @var \DateTime
      *
      * @ORM\Column(name="fecha_creado", type="datetime", nullable=false)
@@ -211,20 +162,6 @@ class Articulos
      * @ORM\Column(name="pedido", type="decimal", precision=14, scale=4, nullable=false, options={"default"="0.0000"})
      */
     private $pedido = '0.0000';
-
-    /**
-     * @var bool
-     *
-     * @ORM\Column(name="web", type="boolean", nullable=false)
-     */
-    private $web = '0';
-
-    /**
-     * @var bool
-     *
-     * @ORM\Column(name="garantia", type="boolean", nullable=false)
-     */
-    private $garantia = '0';
 
     /**
      * @var \Cajas
@@ -304,50 +241,14 @@ class Articulos
         return $this->idArticulo;
     }
 
-    public function getCodigo1(): ?string
+    public function getCodigo(): ?string
     {
-        return $this->codigo1;
+        return $this->codigo;
     }
 
-    public function setCodigo1(?string $codigo1): self
+    public function setCodigo(?string $codigo): self
     {
-        $this->codigo1 = $codigo1;
-
-        return $this;
-    }
-
-    public function getCodigo2(): ?string
-    {
-        return $this->codigo2;
-    }
-
-    public function setCodigo2(?string $codigo2): self
-    {
-        $this->codigo2 = $codigo2;
-
-        return $this;
-    }
-
-    public function getCodigo3(): ?string
-    {
-        return $this->codigo3;
-    }
-
-    public function setCodigo3(?string $codigo3): self
-    {
-        $this->codigo3 = $codigo3;
-
-        return $this;
-    }
-
-    public function getCodigo4(): ?string
-    {
-        return $this->codigo4;
-    }
-
-    public function setCodigo4(?string $codigo4): self
-    {
-        $this->codigo4 = $codigo4;
+        $this->codigo = $codigo;
 
         return $this;
     }
@@ -388,18 +289,6 @@ class Articulos
         return $this;
     }
 
-    public function getUrl(): ?string
-    {
-        return $this->url;
-    }
-
-    public function setUrl(?string $url): self
-    {
-        $this->url = $url;
-
-        return $this;
-    }
-
     public function getDescripcion(): ?string
     {
         return $this->descripcion;
@@ -408,18 +297,6 @@ class Articulos
     public function setDescripcion(?string $descripcion): self
     {
         $this->descripcion = $descripcion;
-
-        return $this;
-    }
-
-    public function getDescripcion2(): ?string
-    {
-        return $this->descripcion2;
-    }
-
-    public function setDescripcion2(?string $descripcion2): self
-    {
-        $this->descripcion2 = $descripcion2;
 
         return $this;
     }
@@ -556,30 +433,6 @@ class Articulos
         return $this;
     }
 
-    public function getEstado(): ?bool
-    {
-        return $this->estado;
-    }
-
-    public function setEstado(bool $estado): self
-    {
-        $this->estado = $estado;
-
-        return $this;
-    }
-
-    public function getDestacado(): ?bool
-    {
-        return $this->destacado;
-    }
-
-    public function setDestacado(bool $destacado): self
-    {
-        $this->destacado = $destacado;
-
-        return $this;
-    }
-
     public function getFechaCreado(): ?\DateTimeInterface
     {
         return $this->fechaCreado;
@@ -624,30 +477,6 @@ class Articulos
     public function setPedido(string $pedido): self
     {
         $this->pedido = $pedido;
-
-        return $this;
-    }
-
-    public function getWeb(): ?bool
-    {
-        return $this->web;
-    }
-
-    public function setWeb(bool $web): self
-    {
-        $this->web = $web;
-
-        return $this;
-    }
-
-    public function getGarantia(): ?bool
-    {
-        return $this->garantia;
-    }
-
-    public function setGarantia(bool $garantia): self
-    {
-        $this->garantia = $garantia;
 
         return $this;
     }
